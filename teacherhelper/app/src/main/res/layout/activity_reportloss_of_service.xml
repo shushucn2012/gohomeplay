@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <View
+        style="@style/hline_fill_top"
+        android:layout_below="@+id/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_status_name"
+                style="@style/text_33316_style"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginTop="15dp"
+                android:text="挂失声明："
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_status_tip"
+                style="@style/text_66614_style"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:layout_marginTop="10dp"
+                android:text="" />
+
+            <LinearLayout
+                android:id="@+id/input_info_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/myservice_details_info_label"
+                        android:text="联系人：" />
+
+                    <EditText
+                        android:id="@+id/contact_name"
+                        style="@style/text_22214_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="单行输入(必填项)"
+                        android:maxLength="30"
+                        android:maxLines="2"
+                        android:paddingLeft="6dp" />
+                </LinearLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/myservice_details_info_label"
+                        android:text="联系电话：" />
+
+                    <EditText
+                        android:id="@+id/contact_phone"
+                        style="@style/text_22214_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="单行输入(必填项)"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:paddingLeft="6dp" />
+                </LinearLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/myservice_details_info_label"
+                        android:text="园所：" />
+
+                    <EditText
+                        android:id="@+id/contact_school"
+                        style="@style/text_22214_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gffffff"
+                        android:gravity="center_vertical"
+                        android:hint="单行输入(必填项)"
+                        android:maxLength="30"
+                        android:maxLines="2"
+                        android:paddingLeft="6dp" />
+                </LinearLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/myservice_details_info_label"
+                        android:text="地址：" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/contact_site"
+                            style="@style/text_22214_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/gffffff"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="省/市/县 (必填项)"
+                            android:maxLines="1"
+                            android:paddingLeft="6dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:src="@mipmap/icon_right_2" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View style="@style/hline_margin12_top" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/myservice_details_info_label"
+                        android:layout_gravity="top"
+                        android:text="备注：" />
+
+                    <EditText
+                        android:id="@+id/edit_remark"
+                        style="@style/text_22214_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gffffff"
+                        android:gravity="top"
+                        android:hint="多行输入，最多100字"
+                        android:maxLength="100"
+                        android:minLines="1"
+                        android:paddingLeft="6dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View style="@style/hline_fill_top" />
+
+        <TextView
+            style="@style/text_colorred_16_style"
+            android:layout_marginTop="15dp"
+            android:text="立即申请" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style">
+
+            <Button
+                android:id="@+id/left_img"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableLeft="@mipmap/icon_close"
+                android:paddingLeft="12dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableRight="@mipmap/icon_right_red"
+                android:paddingRight="12dp"
+                android:text="快速注册"
+                android:textColor="@color/color_text_red_deep"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_33314_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="登录"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:id="@+id/area_weixin_login"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rec_green_stroke_green_solid_corner30"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_weixin_login2" />
+
+            <TextView
+                style="@style/text_fff16_style"
+                android:layout_marginLeft="10dp"
+                android:text="使用微信登录" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_66612_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="或" />
+
+        <Button
+            android:id="@+id/btn_login_by_phone"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rec_gray_stroke_gray_solid_corner30"
+            android:text="使用手机号登录"
+            android:textColor="@color/g666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_pwd_login"
+            style="@style/text_33315_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="账号密码登录"
+            android:textColor="@color/color_text_red_deep" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            style="@style/text_99910_style"
+            android:text="注册即代表同意「61学院」" />
+
+        <TextView
+            style="@style/text_33310_style"
+            android:text="服务条款" />
+
+        <TextView
+            style="@style/text_99910_style"
+            android:text="和" />
+
+        <TextView
+            style="@style/text_33310_style"
+            android:text="隐私条款" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            style="@style/text_99914_style"
+            android:layout_marginTop="10dp"
+            android:text="分类选择" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_marginTop="10dp" />
+
+        <ListView
+            android:id="@+id/lv_teachers"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/gdddddd"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@drawable/selector_dialog_item" />
+
+        <LinearLayout
+            android:id="@+id/area_bottom_finish"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical">
+
+            <View
+                style="@style/hline_fill_top"
+                android:layout_height="10dp" />
+
+            <TextView
+                style="@style/text_red18_style2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com_whole" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/tip_bg_red"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin"
+        android:text="请选择您所在的幼儿园并完善园长信息"
+        android:textColor="@color/com_orange"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/area_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/group_name_area"
+            style="@style/me_item_area_style2">
+
+            <TextView
+                style="@style/me_item_tv_style2"
+                android:text="幼儿园名称" />
+
+            <TextView
+                android:id="@+id/tv_groupp_name_value"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请选择幼儿园"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/color_text_tip"
+                android:textSize="15sp" />
+
+            <ImageView
+                style="@style/me_item_arrow_style"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/hline_fill_halfdp"
+            android:layout_marginLeft="@dimen/com_border_margin" />
+
+        <RelativeLayout
+            android:id="@+id/group_addr_big_area"
+            style="@style/me_item_area_style2">
+
+            <TextView
+                style="@style/me_item_tv_style2"
+                android:text="所在地区" />
+
+            <TextView
+                android:id="@+id/tv_groupp_addr_big_value"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint=""
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/color_text_tip"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/hline_fill_halfdp"
+            android:layout_marginLeft="@dimen/com_border_margin" />
+
+        <RelativeLayout
+            android:id="@+id/area_detail_addr"
+            style="@style/me_item_area_style2">
+
+            <TextView
+                style="@style/me_item_tv_style2"
+                android:text="详细地址" />
+
+            <TextView
+                android:id="@+id/tv_groupp_addr_value"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:gravity="right|center_vertical"
+                android:hint=""
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/color_text_tip"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/hline_fill_halfdp"
+            android:layout_marginLeft="@dimen/com_border_margin" />
+
+        <RelativeLayout
+            android:id="@+id/area_group_master_name"
+            style="@style/me_item_area_style2">
+
+            <TextView
+                style="@style/me_item_tv_style2"
+                android:text="园长姓名" />
+
+            <EditText
+                android:id="@+id/et_groupp_master_name"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请填写园长姓名"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/color_text_tip"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/hline_fill_halfdp"
+            android:layout_marginLeft="@dimen/com_border_margin" />
+
+        <RelativeLayout
+            android:id="@+id/area_group_mobile"
+            style="@style/me_item_area_style2">
+
+            <TextView
+                style="@style/me_item_tv_style2"
+                android:text="联系电话" />
+
+            <EditText
+                android:id="@+id/et_groupp_mobile"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="留下联系方式吧"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/color_text_tip"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff"
+        android:text="提 交"
+        android:textColor="@color/color_text_red_deep"
+        android:textSize="18sp" />
+</RelativeLayout>

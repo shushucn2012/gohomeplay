@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loading_bg"
+    android:orientation="vertical">
+
+
+    <!--top bar-->
+    <!--<RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="六一区·乐园" />
+
+    </RelativeLayout>-->
+
+
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:padding="16dp"-->
+        <!--android:textSize="15dp"-->
+        <!--android:textColor="@color/gffffff"-->
+        <!--android:text="AAAAAAAAAAAAAAAAAAAAAAA"-->
+        <!--android:id="@+id/mipushTextView" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_reload"-->
+        <!--android:text="刷新"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>-->
+</LinearLayout>

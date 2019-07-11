@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/area_top_red"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginRight="-25dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/my_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/area_top_red"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/rec_white_stroke_white_solid_cornertop5" />
+
+            <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                android:id="@+id/img_user"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginTop="38dp"
+                android:elevation="8dp"
+                android:src="@mipmap/mine_icon"
+                app:border_color="@color/white"
+                app:border_width="2dp" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/text_33318_style"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/img_user"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/img_exp_vip"
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:layout_below="@+id/tv_username"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/img_user"
+                android:src="@mipmap/icon_exp_vip"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_glod_vip"
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:layout_below="@+id/tv_username"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/img_user"
+                android:src="@mipmap/icon_glod_vip"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_no_vip"
+                style="@style/text_99912_style"
+                android:layout_below="@+id/tv_username"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/img_user"
+                android:text="未开通"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_vip_expire_date"
+                style="@style/text_99912_style"
+                android:layout_below="@+id/img_glod_vip"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/img_user"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/img_vip_entry"
+                android:layout_width="88dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:src="@mipmap/icon_myvip_entry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/area_class"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_class" />
+
+                    <TextView
+                        style="@style/text_66614_style"
+                        android:layout_marginTop="10dp"
+                        android:text="我的班级" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@color/gefefef" />
+
+                <LinearLayout
+                    android:id="@+id/area_notice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_familyconbook_inme" />
+
+                    <TextView
+                        style="@style/text_66614_style"
+                        android:layout_marginTop="10dp"
+                        android:text="家园联系薄" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/com_border_margin">
+
+            <TextView
+                style="@style/text_99914_style"
+                android:text="优质内容" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/gffffff">
+
+            <LinearLayout
+                android:id="@+id/area_collect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_collect" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的收藏" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_download"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_download" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的下载" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_cache"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_me_mycache" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的缓存" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_focus_expert"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_focus_expert" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="关注的专家" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/gffffff"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/area_my_ticket"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_ticket"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26dp"
+                    android:src="@mipmap/my_ticket" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_below="@+id/img_ticket"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="入场券" />
+
+                <TextView
+                    android:id="@+id/tv_ticket_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/img_ticket"
+                    android:background="@drawable/reddot"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/area_activity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/myact" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的活动" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_interesting_class"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_interesting_class" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的兴趣班" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_course"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_course" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的课程" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/com_border_margin">
+
+            <TextView
+                style="@style/text_99914_style"
+                android:text="资产权益" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/gffffff"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/area_coupon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_coupon" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="优惠券" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_orders"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_orders" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的订单" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_my_members"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_my_members" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的会员" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/com_border_margin">
+
+            <TextView
+                style="@style/text_99914_style"
+                android:text="服务提报" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/gffffff"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/area_jixun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_jixun" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的培训" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_train_resp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_train_resp" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="培训反馈" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_tibao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_tibao" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="我的提报" />
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:id="@+id/area_train_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_tibao" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="培训记录" />
+            </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/com_border_margin">
+
+            <TextView
+                style="@style/text_99914_style"
+                android:text="官方服务" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/gffffff"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/area_feeback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/my_feeback" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="意见反馈" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_help"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_help" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="帮助中心" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_custom_service"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_kf" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="联系客服" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/icon_setting" />
+
+                <TextView
+                    style="@style/text_33312_style"
+                    android:layout_marginTop="12dp"
+                    android:text="系统设置" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

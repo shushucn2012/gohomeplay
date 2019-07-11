@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/head_area"
+    android:background="@color/gffffff"
+    android:minHeight="90dp"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp">
+
+        <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/headimg_default_img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/img"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_99914_style"
+                android:text="小坏蛋" />
+
+            <TextView
+                android:id="@+id/tv_evaluate_date"
+                style="@style/text_99910_style"
+                android:text="21小时前" />
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/img_face"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_face3"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/area_commt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_replay"
+            style="@style/text_33314_style"
+            android:text="回复"
+            android:singleLine="true"
+            android:textColor="@color/com_orange"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_comt_content"
+            style="@style/text_33314_style"
+            android:text="哎呀，我们加的小书童好认真啊！"
+            android:textColor="@color/g222222" />
+    </LinearLayout>
+</LinearLayout>

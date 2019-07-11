@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="selectAll"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="submit"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style">
+
+            <LinearLayout
+                android:id="@+id/area_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:src="@mipmap/icon_red_backimg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/page_title"
+                style="@style/topbar_title_style"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:onClick="@{selectAll}"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_area_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="取消全选"
+                    android:textSize="14sp"
+                    android:textColor="@color/gfb4364" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/class_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="确认提交"
+            android:onClick="@{submit}"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@color/gfb4364"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</layout>

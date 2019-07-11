@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <Space
+        android:id="@+id/space_top"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:id="@+id/area_content"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rec_white_stroke_white_solid_corner10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_tempname"
+                style="@style/text_33318_style"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:text="Steam艺术课行事历Steam艺术课行事历Steam艺术课行事历Steam艺术课行事历" />
+
+            <ImageView style="@style/adjust_arrow_style" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginLeft="12dp"
+                android:text="任务" />
+
+            <TextView
+                android:id="@+id/tv_tasknum"
+                style="@style/text_33314_style"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="20dp"
+                android:text="999"
+                android:textSize="24sp" />
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginLeft="82dp"
+                android:text="已分配" />
+
+            <TextView
+                android:id="@+id/tv_allocate_num"
+                style="@style/text_33314_style"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="20dp"
+                android:text="36"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_datetime"
+                style="@style/text_99914_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="2018.09.01-2018.09.11" />
+
+            <Button
+                android:id="@+id/btn_allocate"
+                android:layout_width="75dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/rec_deepred_stroke_deepred_solid_corner30"
+                android:text="分配"
+                android:textColor="@color/gffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+</LinearLayout>

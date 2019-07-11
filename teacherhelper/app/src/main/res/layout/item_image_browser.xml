@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/pv_show_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/g000000"
+            android:src="@mipmap/img_default_h" />
+    </RelativeLayout>
+</RelativeLayout>
+

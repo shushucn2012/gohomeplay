@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com_whole" />
+
+    <ListView
+        android:id="@+id/lv_whole"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gffffff"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff">
+
+        <TextView
+            android:id="@+id/tv_chosen_num"
+            style="@style/text_33315_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="已选择：0位老师" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rec_deepred_stroke_deepred_solid_corner30"
+            android:text="确定"
+            android:textColor="@color/gffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

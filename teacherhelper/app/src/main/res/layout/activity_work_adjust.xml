@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff7f7"
+            android:minHeight="189dp"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_33316_style"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/text_33315_style"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="@color/color_text_red_deep" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                style="@style/text_66614_style"
+                android:layout_marginTop="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_target"
+                style="@style/text_66614_style"
+                android:layout_marginTop="15dp"
+                android:text="" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/area_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gffffff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/text_33315_style"
+                android:layout_centerVertical="true"
+                android:text="开始时间" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/text_66615_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:text="" />
+
+            <ImageView style="@style/adjust_arrow_style" />
+        </RelativeLayout>
+
+        <View style="@style/hline_fill_top" />
+
+        <RelativeLayout
+            android:id="@+id/area_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gffffff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/text_33315_style"
+                android:layout_centerVertical="true"
+                android:text="结束时间" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                style="@style/text_66615_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:text="" />
+
+            <ImageView style="@style/adjust_arrow_style" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_text_red_deep"
+        android:gravity="center">
+
+        <TextView
+            style="@style/text_fff18_style"
+            android:text="保 存" />
+    </LinearLayout>
+
+</RelativeLayout>

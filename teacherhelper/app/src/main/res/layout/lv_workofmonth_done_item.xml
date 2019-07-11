@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_corner_4">
+
+        <ImageView
+            android:id="@+id/check_task"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/task_gou" />
+
+        <TextView
+            android:id="@+id/task_type_name"
+            style="@style/text_fff13_style"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/check_task"
+            android:background="@drawable/shape_corner_20c9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="亲子活动" />
+
+        <TextView
+            android:id="@+id/task_name"
+            style="@style/text_33315_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/task_type_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="户外团体活动"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/task_status"
+            style="@style/text_66612_style"
+            android:layout_alignLeft="@id/task_name"
+            android:layout_below="@id/task_name"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/img_key"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/icon_task_key"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="backClick"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="publishClick"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.park61.teacherhelper.widget.listview.ObservableScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/top_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/img_default_h" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/activity_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="贝玛教育活动"
+                        android:textColor="@color/g333333"
+                        android:textSize="18sp" />
+
+                    <!--活动简介 -->
+                    <TextView
+                        android:id="@+id/activity_intro"
+                        style="@style/text_99914_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="" />
+                </LinearLayout>
+
+                <View
+                    android:layout_height="10dp"
+                    style="@style/between_view" />
+
+                <LinearLayout
+                    android:id="@+id/toy_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/g222222"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:text="推荐装备" />
+                    <com.park61.teacherhelper.widget.listview.RecyclerViewForScrollView
+                        android:id="@+id/toy_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/show_all_area"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="45dp">
+                        <TextView
+                            android:id="@+id/show_all_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="查看全部"
+                            />
+                        <ImageView
+                            android:id="@+id/show_all_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/xijiantou2_city"
+                            android:layout_toRightOf="@id/show_all_bt"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:alpha="0.5"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_height="10dp"
+                        style="@style/between_view" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/g222222"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/activity_notice" />
+
+                <com.park61.teacherhelper.widget.webview.ShowImageWebView
+                    android:id="@+id/wv_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <View style="@style/between_view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/g222222"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/activity_detail" />
+
+                <com.park61.teacherhelper.widget.webview.ShowImageWebView
+                    android:id="@+id/wv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray" />
+            </LinearLayout>
+
+        </com.park61.teacherhelper.widget.listview.ObservableScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/gfb4364"
+            android:gravity="center"
+            android:onClick="@{publishClick}"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="发布活动" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+
+        <View
+            android:id="@+id/title_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:alpha="0.5"
+            android:onClick="@{backClick}"
+            android:src="@mipmap/icon_content_backimg" />
+
+        <TextView
+            android:id="@+id/top_bar_title"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/g000000"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

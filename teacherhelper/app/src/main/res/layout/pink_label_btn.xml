@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/lay_label_btn">
+
+    <Button
+        android:id="@+id/label_btn"
+        android:textColor="@color/gray_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_4"
+        android:background="@mipmap/img_btn_round"/>
+</RelativeLayout>
+    
+    

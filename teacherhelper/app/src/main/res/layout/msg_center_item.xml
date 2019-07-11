@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_marginTop="@dimen/com_border_margin"
+            android:background="@drawable/rec_white_stroke_white_solid_corner5"
+            android:orientation="vertical"
+            android:padding="@dimen/com_border_margin">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33315_style"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="我是超级无敌大哥级飞机我是超级无敌大哥级飞机我是超级无敌大哥级飞机" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/text_99913_style"
+                android:layout_marginTop="8dp"
+                android:text="2018-05-10" />
+
+            <ImageView
+                android:id="@+id/img_msg_pic"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_default_h" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_over"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="已结束"
+            android:textColor="@color/gffffff"
+            android:layout_marginBottom="45dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/circle_transgrag_solid"
+            android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

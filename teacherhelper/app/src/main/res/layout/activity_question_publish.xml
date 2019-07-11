@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:text="取消" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:text="提问" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/text_66614_style"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:text="发布"
+                android:textColor="@color/color_text_red_deep" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/hline_fill_top" />
+
+    <EditText
+        android:id="@+id/edit_input_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="#f5f5f9"
+        android:gravity="top"
+        android:hint="描述一下您的问题"
+        android:maxLength="40"
+        android:minLines="7"
+        android:padding="10dp"
+        android:textColor="@color/g333333"
+        android:textColorHint="@color/g999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_words_num"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#f5f5f9"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical|right"
+        android:text="0/40" />
+
+</LinearLayout>

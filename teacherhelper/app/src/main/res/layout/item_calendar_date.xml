@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="11dp"
+    android:background="@color/gray"
+    android:orientation="horizontal">
+
+   <!-- <ImageView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/circle_shape_666"
+        />-->
+
+    <TextView
+        android:id="@+id/task_date"
+        style="@style/text_66614_style"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:text=""
+        />
+</LinearLayout>

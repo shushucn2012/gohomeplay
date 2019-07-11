@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.park61.teacherhelper.module.clazz.ClazzAddActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--top bar-->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:layout_width="88dp"
+            android:layout_height="21dp"
+            android:text="新增班级" />
+
+        <LinearLayout
+            android:id="@+id/area_right_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_save"
+                android:textColor="@color/tint_color"
+                android:layout_marginRight="@dimen/com_border_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--form-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_labl_clazz_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/camera_bg"
+            android:textSize="@dimen/sp_18"
+            android:text="班级名称"/>
+        <EditText
+            android:id="@+id/et_clazz_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="独一无二的班级名，10个字以内哦~"
+            android:textColorHint="@color/colorLineSales" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gc" />
+
+        <TextView
+            android:id="@+id/tv_labl_clazz_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/camera_bg"
+            android:textSize="@dimen/sp_18"
+            android:text="选择类型"/>
+
+        <LinearLayout
+            android:id="@+id/radio_group_clazz_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:orientation="vertical">
+        </LinearLayout>
+
+
+        <!--<com.xw.repo.XEditText-->
+            <!--android:id="@+id/et_new_clazz_type"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:maxLines="1"-->
+            <!--android:background="@null"-->
+            <!--android:singleLine="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="没有你想要的？手动添加类型"-->
+            <!--android:textColorHint="@color/colorLineSales"-->
+            <!--app:x_disableClear="false"/>-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gc"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

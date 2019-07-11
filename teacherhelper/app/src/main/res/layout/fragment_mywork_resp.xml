@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff7f7">
+
+            <ImageView
+                android:id="@+id/check_task"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/shape_corner_22c7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="189dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_33316_style"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/text_33315_style"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textColor="@color/color_text_red_deep" />
+
+                <TextView
+                    android:id="@+id/tv_intro"
+                    style="@style/text_66614_style"
+                    android:layout_marginTop="15dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_target"
+                    style="@style/text_66614_style"
+                    android:layout_marginTop="15dp"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/area_doperson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gffffff"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_doperson_label"
+                style="@style/text_33315_style"
+                android:layout_centerVertical="true"
+                android:text="执行人" />
+
+            <TextView
+                android:id="@+id/tv_doperson"
+                style="@style/text_66615_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_doperson_label"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/hline_fill_top" />
+
+        <RelativeLayout
+            android:id="@+id/area_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gffffff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/text_33315_style"
+                android:layout_centerVertical="true"
+                android:text="开始时间" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/text_66615_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="" />
+
+            <ImageView
+                style="@style/adjust_arrow_style"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/hline_fill_top" />
+
+        <RelativeLayout
+            android:id="@+id/area_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gffffff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/text_33315_style"
+                android:layout_centerVertical="true"
+                android:text="结束时间" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                style="@style/text_66615_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="" />
+
+            <ImageView
+                style="@style/adjust_arrow_style"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/area_task_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_33318_style"
+                android:text="任务动态" />
+
+            <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                android:id="@+id/lv_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

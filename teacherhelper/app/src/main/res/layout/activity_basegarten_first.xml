@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="647dp"
+            android:background="@color/bg_color"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:layout_marginTop="-10dp"
+                android:src="@mipmap/base_garten_banner" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginTop="12dp"
+                android:src="@mipmap/icon_content_backimg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="492dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:layout_marginTop="155dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/rec_white_stroke_white_solid_corner10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_99914_style"
+                    android:layout_marginTop="18dp"
+                    android:text="线上需提供" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gffffff">
+
+                    <LinearLayout
+                        android:id="@+id/area_focus_expert"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/icon_base_info" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="基础信息" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/area_collect"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/icon_ryzz" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="荣耀资质" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/area_workplan"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/icon_workplan_entry" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="行事历" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/gffffff">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/my_download" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="我的下载" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/myact" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="我的活动" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/my_coupon" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="优惠券" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/gffffff">
+
+                    <LinearLayout
+                        android:id="@+id/area_download"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/my_download" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="我的下载" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/area_activity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/myact" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="我的活动" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/area_coupon"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/my_coupon" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="优惠券" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/gffffff"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/area_custom_service"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/icon_kf" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="联系客服" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/area_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@mipmap/icon_setting" />
+
+                        <TextView
+                            style="@style/text_33313_style"
+                            android:layout_marginTop="10dp"
+                            android:text="系统设置" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

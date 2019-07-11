@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:text="评价" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/text_colorred_14_style"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:text="确定" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_color1_14_style"
+            android:text="戳我高调评价一下！" />
+
+        <LinearLayout
+            android:id="@+id/area_faces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/face1"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/icon_comt1_default" />
+
+                <TextView
+                    style="@style/text_colortip_14_style"
+                    android:layout_marginTop="6dp"
+                    android:text="无语"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/face2"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/icon_comt2_default" />
+
+                <TextView
+                    style="@style/text_colortip_14_style"
+                    android:layout_marginTop="6dp"
+                    android:text="凑合"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/face3"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/icon_comt3_default" />
+
+                <TextView
+                    style="@style/text_colortip_14_style"
+                    android:layout_marginTop="6dp"
+                    android:text="还行"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/face4"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/icon_comt4_default" />
+
+                <TextView
+                    style="@style/text_colortip_14_style"
+                    android:layout_marginTop="6dp"
+                    android:text="推荐"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/face5"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/icon_comt5_default" />
+
+                <TextView
+                    style="@style/text_colortip_14_style"
+                    android:layout_marginTop="6dp"
+                    android:text="狠赞"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_input_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/gf8f8f8"
+        android:gravity="top"
+        android:hint="言论自由属于你，至少5个字哦~"
+        android:maxLength="140"
+        android:minLines="5"
+        android:padding="12dp"
+        android:textColorHint="@color/color_text_tip"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_commit"
+        android:layout_below="@id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33318_style"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="28dp"
+                    android:text="申请培训"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/img_only_contactor"
+                    android:layout_width="88dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="23dp"
+                    android:visibility="visible"
+                    android:src="@mipmap/icon_only_contactor" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/tv_groupmaster_name_label"
+                        style="@style/text_33315_style"
+                        android:layout_marginLeft="@dimen/com_border_margin"
+                        android:text="园长姓名" />
+
+                    <EditText
+                        android:id="@+id/et_groupp_master_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/com_border_margin"
+                        android:background="@color/white"
+                        android:gravity="right|center_vertical"
+                        android:hint="请填写园长姓名"
+                        android:maxLength="10"
+                        android:textColor="@color/g333333"
+                        android:textColorHint="@color/gc9bec2"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_below_groupname"
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="17dp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/img_only_phone"
+                    android:layout_width="88dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:visibility="visible"
+                    android:src="@mipmap/icon_only_phone" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/tv_group_phone_label"
+                        style="@style/text_33315_style"
+                        android:layout_marginLeft="@dimen/com_border_margin"
+                        android:text="手机号" />
+
+                    <EditText
+                        android:id="@+id/et_groupp_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/com_border_margin"
+                        android:background="@color/white"
+                        android:gravity="right|center_vertical"
+                        android:hint="留下联系方式吧"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textColor="@color/g333333"
+                        android:textColorHint="@color/gc9bec2"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="15dp" />
+
+                <RelativeLayout
+                    android:id="@+id/group_name_area"
+                    style="@style/me_item_area_style2">
+
+                    <TextView
+                        style="@style/me_item_tv_style2"
+                        android:text="幼儿园名称"
+                        android:textColor="@color/g999999" />
+
+                    <TextView
+                        android:id="@+id/tv_groupp_name_value"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="32dp"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择幼儿园"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="@color/g333333"
+                        android:textColorHint="@color/gc9bec2"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/img_choose_group_arrow"
+                        style="@style/me_item_arrow_style"
+                        android:layout_marginRight="15dp" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="@dimen/com_border_margin" />
+
+                <RelativeLayout
+                    android:id="@+id/group_addr_big_area"
+                    style="@style/me_item_area_style2">
+
+                    <TextView
+                        style="@style/me_item_tv_style2"
+                        android:text="所在地区"
+                        android:textColor="@color/g999999" />
+
+                    <TextView
+                        android:id="@+id/tv_groupp_addr_big_value"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/com_border_margin"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint=""
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="@color/g333333"
+                        android:textColorHint="@color/gc9bec2"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="@dimen/com_border_margin" />
+
+                <RelativeLayout
+                    android:id="@+id/area_detail_addr"
+                    style="@style/me_item_area_style2">
+
+                    <TextView
+                        style="@style/me_item_tv_style2"
+                        android:text="详细地址"
+                        android:textColor="@color/g999999" />
+
+                    <TextView
+                        android:id="@+id/tv_groupp_addr_value"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/com_border_margin"
+                        android:gravity="right|center_vertical"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="@color/g333333"
+                        android:textColorHint="@color/gc9bec2"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_33318_style"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="28dp"
+                    android:text="代理商信息"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    style="@style/me_item_area_style2"
+                    android:layout_marginTop="28dp">
+
+                    <TextView
+                        style="@style/me_item_tv_style2"
+                        android:text="代理商姓名"
+                        android:textColor="@color/g999999" />
+
+                    <EditText
+                        android:id="@+id/edit_agentname"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/com_border_margin"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请填写代理商姓名"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/g333333"
+                        android:textColorHint="@color/gc9bec2"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="@dimen/com_border_margin" />
+
+                <RelativeLayout style="@style/me_item_area_style2">
+
+                    <TextView
+                        style="@style/me_item_tv_style2"
+                        android:text="手机号"
+                        android:textColor="@color/g999999" />
+
+                    <EditText
+                        android:id="@+id/edit_agentmobile"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/com_border_margin"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="留下联系方式吧"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@color/g333333"
+                        android:textColorHint="@color/gc9bec2"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    style="@style/text_33318_style"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="28dp"
+                    android:text="园所性质"
+                    android:textSize="22sp" />
+
+                <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                    android:id="@+id/gv_garden_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:horizontalSpacing="15dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:verticalSpacing="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    style="@style/text_33318_style"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="28dp"
+                    android:text="采购套装"
+                    android:textSize="22sp" />
+
+                <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                    android:id="@+id/gv_goods_suit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:horizontalSpacing="15dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="2"
+                    android:verticalSpacing="15dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/text_red18_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:text="提 交" />
+</RelativeLayout>

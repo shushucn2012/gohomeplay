@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/com_border_margin"
+    android:paddingRight="@dimen/com_border_margin">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/user_area"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/headimg_default_img" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/text_66612_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/tv_comt_time"
+            android:layout_toRightOf="@id/img_user"
+            android:text="清风徐来" />
+
+        <TextView
+            android:id="@+id/tv_comt_time"
+            style="@style/text_99912_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2015-10-24" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/comt_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comt_title"
+            style="@style/text_33316_style"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="这个游戏真不错，宝贝很喜欢呢！我们家小宝宝说他以后还想来这里画画" />
+
+        <TextView
+            android:id="@+id/tv_comt_content"
+            style="@style/text_66614_style"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="这个游戏真不错，宝贝很喜欢呢！我们家小宝宝说他以后还想来这里画画"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/lv_eva_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/com_orange"
+            android:orientation="vertical">
+
+            <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_eva_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="-5dp"
+                android:background="@color/gffffff"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:verticalSpacing="10dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_banner_pos_and_total"
+                style="@style/text_fff10_style"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_stroke_solid"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="1312313" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/text_99912_style"
+                    android:text="发至：" />
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    style="@style/text_colorred_light_14_style"
+                    android:text="希望之星大班"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/transparent" />
+
+    <View
+        android:id="@+id/list_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine" />
+
+</LinearLayout>

@@ -1,0 +1,238 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<include layout="@layout/topbar_com" />-->
+
+        <!--标题栏 设置的layout_scrollFlags有如下几种选项：
+            scroll: 所有想滚动出屏幕的view都需要设置这个flag-没有设置这个flag的view将被固定在屏幕顶部。
+            enterAlways: 这个flag让任意向下的滚动都会导致该view变为可见,启用快速“返回模式”。
+            enterAlwaysCollapsed: 当你的视图已经设置minHeight属性又使用此标志时， 你的视图只能以最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。
+            exitUntilCollapsed: 滚动退出屏幕，最后折叠在顶端。-->
+        <!--<android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c0f9d0"
+            app:layout_scrollFlags="scroll|enterAlways" />-->
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
+            <!--设置layout_scrollFlags保证CollapsingToolbarLayout能滚动-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+
+            <LinearLayout
+                android:id="@+id/anime_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/gffffff">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/com_border_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/g333333"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/text_66615_style"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/mtab_group"
+                        android:layout_width="150dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/com_border_margin"
+                        android:background="@drawable/tab_build_selector"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_tab_cur"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/tab_build_left_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="本周"
+                            android:textColor="@drawable/txt_orange2white_selector"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tab_next"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-1dp"
+                            android:layout_marginRight="-1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/tab_build_mid_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="下周"
+                            android:textColor="@drawable/txt_orange2white_selector"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/rb_tab_cal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/tab_build_right_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="日历"
+                            android:textColor="@drawable/txt_orange2white_selector"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <!-- 可伸缩背景图布局文件 -->
+
+            </LinearLayout>
+
+            <!--Toolbar放在下面不然会被挡住-->
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-15dp"
+                android:background="@color/gffffff"
+                app:layout_collapseMode="pin">
+
+                <include layout="@layout/topbar_com" />
+            </android.support.v7.widget.Toolbar>
+
+            <!--<android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <!--选项卡-->
+        <LinearLayout
+            android:id="@+id/title_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/use_tv"
+                        style="@style/myorder_activity_top_tv_style"
+                        android:checked="true"
+                        android:text="待办" />
+
+                    <RadioButton
+                        android:id="@+id/used_tv"
+                        style="@style/myorder_activity_top_tv_style"
+                        android:text="已完成" />
+
+                    <RadioButton
+                        android:id="@+id/past_tv"
+                        style="@style/myorder_activity_top_tv_style"
+                        android:text="逾期" />
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/red_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/circle_shape_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/choose_line"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="2dp"
+                    android:background="@color/color_text_red_deep" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout><!--包含可滑动的布局内容(RecyclerView,NestedScrollView,不支持ListView，ScrollView)
+        必须要设置app:layout_behavior="@string/appbar_scrolling_view_behavior" 属性来告知CoordinatorLayout该组件是带有滑动行为的组件,
+        然后CoordinatorLayout在接受到滑动时会通知AppBarLayout中可滑动的Toolbar可以滑出屏幕，
+        这个滑动布局RecyclerView我写在fragment -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:id="@+id/area_tip_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_tip_manage"
+            android:layout_width="167dp"
+            android:layout_height="40.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="-15dp"
+            android:src="@mipmap/tip_manage_task"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

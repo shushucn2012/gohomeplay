@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:minHeight="80dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/com_border_margin"
+    android:paddingRight="@dimen/com_border_margin">
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        style="@style/text_33316_style"
+        android:layout_marginTop="20dp"
+        android:text="福州东森YOYO幼儿园" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_apply_date"
+            style="@style/text_99914_style"
+            android:text="2018.09.06" />
+
+        <TextView
+            android:id="@+id/tv_apply_state"
+            style="@style/text_33314_style"
+            android:layout_alignParentRight="true"
+            android:text="已拒绝" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/baby_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_22216_style"
+                android:text="陈紫涵"
+                />
+
+            <ImageView
+                android:id="@+id/sign_state"
+                android:layout_width="50dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/icon_already_sign"
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/buy_arms"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_height="wrap_content"
+                style="@style/text_red14_style2"
+                android:text="未购买装备"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/parent_name"
+                style="@style/text_99914_style"
+                android:text="陈超"
+                />
+
+            <TextView
+                android:id="@+id/relation"
+                style="@style/text_99914_style"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/parent_name"
+                android:text="(爸爸)"
+                />
+
+            <TextView
+                android:id="@+id/mobile"
+                style="@style/text_99914_style"
+                android:layout_below="@id/parent_name"
+                android:layout_marginTop="3dp"
+                android:text="13720335094"
+                />
+            <TextView
+                android:id="@+id/pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/text_22216_style"
+                android:text="50.00元"
+                android:layout_alignBottom="@id/mobile"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        style="@style/between_line"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        />
+</LinearLayout>

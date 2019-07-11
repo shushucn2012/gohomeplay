@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar_com"/>
+
+    <EditText
+        android:id="@+id/edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_comt_selector"
+        android:gravity="center_vertical"
+        android:hint="请输入内容"
+        android:maxLength="20"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/g333333"
+        android:textColorHint="@color/g999999"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lv_relation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/gffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_com_style"
+        android:text="保存" />
+
+</LinearLayout>

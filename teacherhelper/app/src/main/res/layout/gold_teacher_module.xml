@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area_gold_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_gold_teacher"
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="金牌培训师"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/area_change_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_99912_style"
+                android:text="换一换" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_change" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+        android:id="@+id/lv_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/area_see_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            style="@style/between_line"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="8dp"
+                android:src="@mipmap/icon_mmore" />
+
+            <TextView
+                style="@style/text_99914_style"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:text="查看更多" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="8dp"
+                android:src="@mipmap/icon_mmore" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/com_border_margin"
+    android:paddingRight="@dimen/com_border_margin">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+            android:id="@+id/img_def"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_default_info"
+            app:border_color="@color/transparent"
+            app:border_width="0dp" />
+
+        <TextView
+            android:id="@+id/tv_zzname"
+            style="@style/text_33318_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/img_def"
+            android:text="师训展示" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/text_66614_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="51dp"
+        android:text="设计源于生活，细节源于品质" />
+
+    <!--<ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_default_v" />-->
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/img_default_h" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/transparent" />
+
+    <View
+        android:id="@+id/list_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine" />
+
+</LinearLayout>

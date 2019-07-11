@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_no"
+            style="@style/text_99916_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp"
+            android:text="小班科学《蔬菜奶奶过生日》小班科学《蔬菜奶奶过生日》小班科学《蔬菜奶奶过生日》小班科学《蔬菜奶奶过生日》" />
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:src="@mipmap/download_uncheck" />
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill_halfdp"
+        android:layout_marginLeft="40dp" />
+</LinearLayout>

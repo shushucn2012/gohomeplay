@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/gffffff"
+    android:minHeight="100dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/com_border_margin"
+    android:paddingRight="@dimen/com_border_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_get"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/amount_area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/unit_tv"
+                style="@style/text_red14_style2"
+                android:layout_marginTop="4dp"
+                android:text="¥" />
+
+            <TextView
+                android:id="@+id/amount_tv"
+                style="@style/text_red36_style2"
+                android:layout_marginLeft="5dp"
+                android:text="500"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/amount_area"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_coupon_title"
+                style="@style/text_33314_style"
+                android:text="满100减30" />
+
+            <TextView
+                android:id="@+id/limittime_tv"
+                style="@style/text_99912_style"
+                android:layout_marginTop="6dp"
+                android:text="2016.03.13-2016.04.21" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_got"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rec_999_stroke_trans_solid_corner30"
+        android:gravity="center"
+        android:text="已领取"
+        android:textColor="@color/g999999"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_get"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rec_deepred_stroke_trans_solid_corner30"
+        android:gravity="center"
+        android:text="领 取"
+        android:textColor="@color/color_text_red_deep"
+        android:textSize="15sp" />
+
+    <View
+        style="@style/hline_fill_top"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

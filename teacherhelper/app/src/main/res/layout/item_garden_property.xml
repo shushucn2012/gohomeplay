@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_99916_style"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/rec_999_stroke_trans_solid_corner30"
+        android:gravity="center"
+        android:text="示范园" />
+
+</LinearLayout>

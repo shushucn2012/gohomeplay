@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.lijiankun24.shadowlayout.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-5dp"
+        app:shadowColor="#66000000"
+        app:shadowDx="0dp"
+        app:shadowDy="0dp"
+        app:shadowRadius="10dp"
+        app:shadowShape="rectangle"
+        app:shadowSide="all"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_default_v" />
+    </com.lijiankun24.shadowlayout.ShadowLayout>-->
+
+    <!--<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rec_white_stroke_white_solid_corner15">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="65dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/img_wpcate_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/item_mysubs_wps_topbg"
+                        app:riv_corner_radius_top_left="15dp"
+                        app:riv_corner_radius_top_right="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_no"
+                        style="@style/text_33316_style"
+                        android:layout_marginLeft="@dimen/com_border_margin"
+                        android:layout_marginTop="@dimen/com_border_margin"
+                        android:text="NO.1"
+                        android:textColor="@color/g3F0102" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/com_border_margin"
+                        android:layout_marginTop="40dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="宝宝入园准备宝宝入园准备宝宝入园准备宝宝入园准备"
+                            android:textColor="@color/g3F0102"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_intro"
+                    style="@style/text_66615_style"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="帮助宝宝尽快适应学习内容，老师需要关心宝宝。而造成这样的情况就是因为家长自己的态度造成的。" />
+
+               <!-- <android.support.v7.widget.CardView
+                    android:id="@+id/area_resources"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/g222222"
+                    app:cardCornerRadius="5dp"
+                    app:contentPaddingBottom="3dp"
+                    app:contentPaddingLeft="5dp"
+                    app:contentPaddingRight="5dp"
+                    app:contentPaddingTop="3dp">-->
+
+                    <TextView
+                        android:id="@+id/area_resources"
+                        style="@style/text_fff13_style"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/rec_222_stroke_222_solid_corner5"
+                        android:text="点击下方查看内容" />
+                <!--</android.support.v7.widget.CardView>-->
+
+                <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                    android:id="@+id/lv_tasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@color/transparent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- <com.lijiankun24.shadowlayout.ShadowLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|bottom"
+             android:layout_marginLeft="12dp"
+             android:layout_marginRight="12dp"
+             android:layout_marginBottom="-5dp"
+             app:shadowColor="#66FB506A"
+             app:shadowDx="0dp"
+             app:shadowDy="0dp"
+             app:shadowRadius="10dp"
+             app:shadowShape="rectangle"
+             app:shadowSide="right|left|bottom">
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="44dp"
+                 android:scaleType="fitXY"
+                 android:src="@mipmap/btn_bg_wps_subs" />
+         </com.lijiankun24.shadowlayout.ShadowLayout>-->
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/btn_bg_wps_subs"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+</FrameLayout>

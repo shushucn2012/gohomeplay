@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_close" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/area_right"
+            android:layout_toRightOf="@+id/area_left"
+            android:ellipsize="end"
+            android:text="@string/app_name" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/text_red15_style2"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:text="邀请" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/top_bar"
+        android:max="100"
+        android:progress="0" />
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pb"
+        android:layout_marginTop="1dp" />
+
+</RelativeLayout>

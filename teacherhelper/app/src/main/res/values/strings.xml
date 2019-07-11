@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">61学院</string>
+    <string name="text_save">保存</string>
+    <string name="scan_text">请将二维码放在取景器内</string>
+    <string name="about_text">
+        \u3000\u300061学院APP作为贝玛公司万能工匠教具系列的线上师训、教研平台，致力于提高幼师教研能力，提供优质的学习资源及简单高效的备课工具，通过学习、引导和线上互动，让孩子爱上创造力课程，老师备课、教学更轻松。\n\u3000\u3000同时、为了宣传园所的教学特色，直观体现园所教学质量，系统还将陆续提供DAP（幼儿脑部发展）评测应用和园务管理类的工具等。帮助园所做好家园共育，让老师更了解孩子，做到因材施教，让家长能感知到孩子的成长和变化，让家长和孩子一同成长。
+   </string>
+    <string name="teacherdesc">
+        简介：蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭华蔡铭蔡铭华
+   </string>
+
+    <string name="activity_time">活动时间</string>
+    <string name="activity_site">活动地点</string>
+    <string name="activity_peoples">TA们也参加了</string>
+    <string name="activity_notice">活动须知</string>
+    <string name="activity_detail">活动详情</string>
+    <string name="activity_arms">游戏物料</string>
+    <string name="activity_buy_arms">一键购买</string>
+    <string name="activity_sign">立即报名</string>
+    <string name="activity_close">报名结束</string>
+    <string name="activity_data">报名数据</string>
+    <string name="activity_share">分享</string>
+    <string name="activity_my">我的活动</string>
+    <string name="activity_lib">活动库</string>
+    <string name="toys_recommend">推荐列表</string>
+    <string name="sign_in">签到</string>
+    <string name="arms_more">更多</string>
+
+    <string name="download_all">下载全部</string>
+    <string name="pause_all">全部暂停</string>
+    <string name="audio">音频</string>
+    <string name="video">视频</string>
+    <string name="files">课件</string>
+    <string name="download_num">共%1$d个</string>
+    <string name="ok">继续下载</string>
+    <string name="no">取消</string>
+    <string name="net_change_tip">提示</string>
+    <string name="continue_to_download">您当前处于3G/4G网络下，本次下载会消耗流量，是否继续下载？</string>
+    <string name="action_cancel">取消</string>
+    <string name="service_apply_text">服务申请</string>
+
+    <string name="day_name_format">E</string>
+    <string name="invalid_date">无效的日期</string>
+    <string name="month_name_format">yyyy.MM</string>
+    <string name="renminbi">¥</string>
+    <string name="vip_auth_intro">61学院会员认证说明\n 1、您所在的园所必须为万能工匠产品使用园所；\n 2、您需要提供园所名称、地址、园长姓名及园长联系方式；\n 3、61学院工作人员将尽快为您审核，审核通过后会在1个工作日内帮你开通会员。</string>
+</resources>

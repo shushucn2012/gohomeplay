@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rec_gray_stroke_trans_solid_corner1"
+        app:cardBackgroundColor="@color/gffffff"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_act"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_default_v" />
+
+                <ImageView
+                    android:id="@+id/img_can_play"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_play_big"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33314_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="1231313" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                style="@style/text_66612_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="1231313" />
+
+            <TextView
+                android:id="@+id/tv_keywords"
+                style="@style/text_66612_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:text="#1231   #313"
+                android:textColor="@color/color_text_red_deep" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp">
+
+                <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                    android:id="@+id/img_teacher"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/headimg_default_img" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    style="@style/text_99912_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="11sp"
+                    android:layout_toLeftOf="@+id/area_praise_num"
+                    android:layout_toRightOf="@+id/img_teacher"
+                    android:singleLine="true"
+                    android:text="DOM老师" />
+
+                <LinearLayout
+                    android:id="@+id/area_praise_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@mipmap/comment_noattend" />
+
+                    <TextView
+                        android:id="@+id/tv_read_num"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:text="33" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

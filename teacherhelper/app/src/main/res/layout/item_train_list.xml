@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_space"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="20dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33318_style"
+                android:text="入园培训"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/text_66614_style"
+                android:layout_marginTop="20dp"
+                android:text="培训开始时间：2018年03月02日  9:00" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                style="@style/text_66614_style"
+                android:layout_marginTop="8dp"
+                android:text="培训开始时间：2018年03月02日  9:00" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                style="@style/text_66614_style"
+                android:layout_marginTop="8dp"
+                android:text="培训时长：4小时" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    style="@style/text_33313_style"
+                    android:singleLine="true"
+                    android:maxWidth="130dp"
+                    android:layout_centerVertical="true"
+                    android:text="培训师：胡婷胡婷胡婷胡婷胡婷胡婷" />
+
+                <LinearLayout
+                    android:id="@+id/area_contact_trainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_teacher_name">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/icon_train_cantactor" />
+
+                    <TextView
+                        android:id="@+id/tv_contact_teacher"
+                        style="@style/text_33313_style"
+                        android:layout_marginLeft="2dp"
+                        android:text="联系培训师" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_evaluate"
+                    style="@style/text_fff15_style"
+                    android:layout_width="78dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_grant_button"
+                    android:text="评价反馈" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_train_finish"
+            android:visibility="gone"/>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

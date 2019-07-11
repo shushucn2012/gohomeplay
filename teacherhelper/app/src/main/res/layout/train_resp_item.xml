@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/space_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:layout_marginRight="@dimen/com_border_margin"
+        android:background="@drawable/rec_white_stroke_white_solid_corner5"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33315_style"
+            android:singleLine="true"
+            android:text="万能工匠院长集训" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_33313_style"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="万能工匠院长集训" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    style="@style/text_99911_style"
+                    android:text="已提交" />
+
+                <TextView
+                    android:id="@+id/tv_submit_num"
+                    style="@style/text_99911_style"
+                    android:text="50"
+                    android:textColor="@color/color_text_red_deep" />
+
+                <TextView
+                    style="@style/text_99911_style"
+                    android:text="已提交" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="75dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/red_corner_shape"
+                android:gravity="center"
+                android:text="邀请分享"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

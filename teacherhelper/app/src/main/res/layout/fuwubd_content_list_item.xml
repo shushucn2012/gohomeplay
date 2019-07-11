@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/area_img"
+            android:background="@color/gffffff"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33316_style"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="我是超级无敌大哥级飞机我是超级无敌大哥级飞机我是超级无敌大哥级飞机" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_99913_style"
+                    android:maxWidth="100dp"
+                    android:singleLine="true"
+                    android:text="12311111111111111111111111111111" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@mipmap/icon_read" />
+
+                    <TextView
+                        android:id="@+id/tv_viewnum"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="5dp"
+                        android:text="123" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@mipmap/icon_zan" />
+
+                    <TextView
+                        android:id="@+id/tv_zannum"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="5dp"
+                        android:text="123" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/area_img"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_toy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_default_v"
+                app:riv_corner_radius="2dp" />
+
+            <ImageView
+                android:id="@+id/img_can_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_play_big"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/hline_fill_halfdp" />
+</LinearLayout>

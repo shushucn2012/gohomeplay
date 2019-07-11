@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PullBezierZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+        <attr name="isBezier" format="boolean" />
+        <attr name="bezierColor" format="color" />
+        <attr name="maxBezierHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PSTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TimeTextView"></declare-styleable>
+    <declare-styleable name="WeekCalendar">
+        <attr name="numOfPages" format="integer" />
+        <attr name="daysTextSize" format="dimension" />
+        <attr name="daysTextColor" format="color" />
+        <attr name="daysBackgroundColor" format="color" />
+        <attr name="weekTextSize" format="dimension" />
+        <attr name="weekTextColor" format="color" />
+        <attr name="weekBackgroundColor" format="color" />
+        <attr name="selectedBgColor" format="color" />
+        <attr name="todaysDateBgColor" format="color" />
+        <attr name="dayNameLength">
+            <enum name="singleLetter" value="0" />
+            <enum name="threeLetters" value="1" />
+        </attr>
+        <attr name="hideNames" format="boolean" />
+    </declare-styleable>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageViews">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="EasyCountDownTextureView">
+        <attr name="easyCountRectWidth" format="dimension" />
+        <attr name="easyCountRectHeight" format="dimension" />
+        <attr name="easyCountRectRadius" format="dimension" />
+        <attr name="easyCountRectBorderSize" format="dimension" />
+        <attr name="easyCountRectBorderColor" format="color" />
+        <attr name="easyCountRectBorderStroke" format="dimension" />
+        <attr name="easyCountRectSpacing" format="dimension" />
+        <attr name="easyCountTimeColor" format="color" />
+        <attr name="easyCountTimeSize" format="dimension" />
+        <attr name="easyCountTimeStroke" format="dimension" />
+        <attr name="easyCountColonColor" format="color" />
+        <attr name="easyCountColonSize" format="dimension" />
+        <attr name="easyCountColonStroke" format="dimension" />
+        <attr name="easyCountBackgroundColor" format="color" />
+        <attr name="easyCountDay" format="integer" />
+        <attr name="easyCountHour" format="integer" />
+        <attr name="easyCountMinute" format="integer" />
+        <attr name="easyCountSecond" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="cir_button">
+        <attr name="cirColor" format="reference" />
+        <attr name="cirRadiu" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CalendarPickerView">
+        <attr name="android:background" />
+        <attr name="dividerColor" format="color" />
+        <attr name="dayBackground" format="reference" />
+        <attr name="dayTextColor" format="color" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="headerTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="calendar_cell">
+        <attr name="state_selectable" format="boolean" />
+        <attr name="state_current_month" format="boolean" />
+        <attr name="state_today" format="boolean" />
+        <attr name="state_range_first" format="boolean" />
+        <attr name="state_range_middle" format="boolean" />
+        <attr name="state_range_last" format="boolean" />
+        <attr name="state_highlighted" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MShadowLayout">
+        <attr name="sl_cornerRadius" format="dimension" />
+        <attr name="sl_shadowRadius" format="dimension" />
+        <attr name="sl_shadowColor" format="color" />
+        <attr name="sl_dx" format="dimension" />
+        <attr name="sl_dy" format="dimension" />
+    </declare-styleable>
+</resources>

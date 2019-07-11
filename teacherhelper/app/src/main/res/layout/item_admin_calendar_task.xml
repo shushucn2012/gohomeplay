@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.park61.teacherhelper.widget.listview.MyRItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="412dp"
+            android:layout_height="118dp"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/area_content"
+                android:layout_width="340dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_corner_4">
+
+                <TextView
+                    android:id="@+id/task_type_name"
+                    style="@style/text_fff13_style"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/check_task"
+                    android:background="@drawable/shape_corner_20c9"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="亲子活动" />
+
+                <TextView
+                    android:id="@+id/task_name"
+                    style="@style/text_33315_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@id/task_type_name"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="户外团体活动"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/task_class"
+                    style="@style/text_66612_style"
+                    android:layout_alignLeft="@id/task_name"
+                    android:layout_below="@id/task_name"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="9人完成 李茜、丸子等11人" />
+
+                <ImageView
+                    android:id="@+id/keyview"
+                    android:layout_width="36dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@mipmap/icon_task_key"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/linear_bottom"
+                    style="@style/hline_fill_top"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/task_type_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear_bottom"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/task_status"
+                        style="@style/text_99912_style"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginRight="25dp"
+                        android:text="9人完成 李茜、丸子等11人" />
+
+                    <ImageView
+                        android:id="@+id/img_edit"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_plan_modify" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:paddingRight="5dp">
+
+            <!--自定义侧边菜单布局-->
+           <!-- <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="56dp"
+                android:layout_height="80dp"
+                android:background="@drawable/rec_gray_stroke_trans_gray_corner5"
+                android:gravity="center"
+                android:text="编辑"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="gone"/>-->
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="68dp"
+                android:layout_height="108dp"
+                android:background="@drawable/rec_reddeep_stroke_reddeep_solid_corner5"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.park61.teacherhelper.widget.listview.MyRItem>

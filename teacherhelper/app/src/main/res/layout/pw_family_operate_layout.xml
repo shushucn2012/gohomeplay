@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:gravity="center"
+    android:minHeight="125dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_top_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/icon_white_solid_uparrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="-2dp"
+        android:background="@color/gffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/view_edit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/com_border_margin">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_plan_modify" />
+
+            <TextView
+                style="@style/text_33318_style"
+                android:layout_marginLeft="15dp"
+                android:text="编辑" />
+        </LinearLayout>
+
+        <View
+            style="@style/hline_fill_halfdp"
+            android:layout_marginLeft="33dp" />
+
+        <LinearLayout
+            android:id="@+id/view_del"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/com_border_margin"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_lajitong" />
+
+            <TextView
+                style="@style/text_33318_style"
+                android:layout_marginLeft="15dp"
+                android:text="删除" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_bottom_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-2dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/icon_white_solid_downarrow" />
+    </RelativeLayout>
+
+</LinearLayout>

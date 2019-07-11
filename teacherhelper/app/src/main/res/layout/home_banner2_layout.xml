@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/gffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/area_quick0"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_quick0"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_huanchuang"/>
+
+        <TextView
+            android:id="@+id/tv_quick0"
+            style="@style/text_66612_style"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_quick1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_quick1"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_qujiao"/>
+
+        <TextView
+            android:id="@+id/tv_quick1"
+            style="@style/text_66612_style"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_quick2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_quick2"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_yaoqing"/>
+
+        <TextView
+            android:id="@+id/tv_quick2"
+            style="@style/text_66612_style"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_quick3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_quick3"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_pince"/>
+
+        <TextView
+            android:id="@+id/tv_quick3"
+            style="@style/text_66612_style"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</LinearLayout>

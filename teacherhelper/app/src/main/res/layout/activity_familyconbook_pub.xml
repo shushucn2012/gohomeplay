@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_righttext" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="28dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_chose_temp"
+            android:layout_width="90dp"
+            android:layout_height="32dp"
+            app:cardBackgroundColor="@color/gf4f4f4"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tv_big_class"
+                style="@style/text_33313_style"
+                android:layout_gravity="center"
+                android:text="选择模板" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_save_temp"
+            android:layout_width="90dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="@color/gf4f4f4"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tv_save_temp"
+                style="@style/text_33313_style"
+                android:layout_gravity="center"
+                android:text="保存为模板" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="500"
+                android:minHeight="150dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="说点什么吧..."
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="@dimen/com_border_margin"
+                android:paddingBottom="10dp"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/gc9bec2"
+                android:textSize="16sp"
+                android:text=""/>
+
+            <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_input_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:background="@color/white"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:paddingLeft="28dp"
+                android:paddingRight="15dp"
+                android:verticalSpacing="6dp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/area_choose_student"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp">
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:text="选择学生" />
+
+                <TextView
+                    android:id="@+id/tv_chosen_num"
+                    style="@style/text_33314_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="" />
+
+                <ImageView
+                    style="@style/adjust_arrow_style"
+                    android:layout_marginRight="5dp" />
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

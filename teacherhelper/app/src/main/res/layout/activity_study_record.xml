@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <ImageView
+                    android:id="@+id/img_paiming"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_paiming" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/img_paiming"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/text_33312_style"
+                            android:text="今日学习" />
+
+                        <TextView
+                            android:id="@+id/tv_today_time"
+                            style="@style/text_colorred_14_style"
+                            android:text=""
+                            android:textSize="12sp" />
+
+                        <TextView
+                            style="@style/text_33312_style"
+                            android:text="小时 累计学习" />
+
+                        <TextView
+                            android:id="@+id/tv_total_time"
+                            style="@style/text_33312_style"
+                            android:text="" />
+
+                        <TextView
+                            style="@style/text_33312_style"
+                            android:text="小时" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            style="@style/text_33312_style"
+                            android:text="打败" />
+
+                        <TextView
+                            android:id="@+id/tv_percent_man"
+                            style="@style/text_colorred_14_style"
+                            android:text=""
+                            android:textSize="12sp" />
+
+                        <TextView
+                            style="@style/text_33312_style"
+                            android:text="用户" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_color2_14_style"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginTop="15dp"
+                android:text="今天"
+                android:textSize="16sp" />
+
+            <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                android:id="@+id/lv_record_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="20dp"
+                android:listSelector="@color/transparent" />
+
+            <TextView
+                android:id="@+id/tv_week"
+                style="@style/text_color2_14_style"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginTop="20dp"
+                android:text="一周内"
+                android:textSize="16sp" />
+
+            <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                android:id="@+id/lv_record_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="12dp"
+                android:listSelector="@color/transparent" />
+
+            <TextView
+                android:id="@+id/tv_early"
+                style="@style/text_color2_14_style"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:layout_marginTop="20dp"
+                android:text="更早"
+                android:textSize="16sp" />
+
+            <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                android:id="@+id/lv_record_early"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="12dp"
+                android:listSelector="@color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

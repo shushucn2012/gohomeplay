@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="158dp"
+        android:src="@mipmap/icon_feedback_suc" />
+
+    <TextView
+        style="@style/text_33318_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="评价提交成功"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_shownum"
+        style="@style/text_33314_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="" />
+
+</LinearLayout>

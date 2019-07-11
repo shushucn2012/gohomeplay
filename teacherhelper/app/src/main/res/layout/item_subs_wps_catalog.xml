@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/gffffff"
+    android:minHeight="70dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_no"
+        style="@style/text_99916_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:text="01" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_33318_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="亲子关系一切教育的基础亲子关系一切教育的基础" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        style="@style/text_99914_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/com_border_margin"
+        android:text="未完成" />
+
+    <View
+        android:id="@+id/line_bottom"
+        style="@style/hline_fill_halfdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp" />
+
+</RelativeLayout>

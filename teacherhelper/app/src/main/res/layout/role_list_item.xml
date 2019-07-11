@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/app_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_role_title"
+            style="@style/text_33312_style"
+            android:layout_centerVertical="true"
+            android:text="老师" />
+
+        <TextView
+            android:id="@+id/tv_all_check"
+            style="@style/text_33312_style"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/img_check"
+            android:text="全选" />
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/download_uncheck" />
+    </RelativeLayout>
+
+    <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+        android:id="@+id/lv_persion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent" />
+
+</LinearLayout>

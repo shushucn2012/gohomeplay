@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wpcate_name"
+            style="@style/text_33320_style"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginTop="12dp"
+            android:text="我的行事历" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_wpcate_cover"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/wp_first_mid_banner"
+            app:riv_corner_radius="8dp" />
+
+        <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+            android:id="@+id/gv_my_wp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:horizontalSpacing="12dp"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:verticalSpacing="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

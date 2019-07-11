@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="103dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_course"
+        android:layout_width="120dp"
+        android:layout_height="77dp"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/teach_itemempty"
+        app:riv_corner_radius="2dp" />
+
+    <ImageView
+        android:id="@+id/img_renqi"
+        android:layout_width="32dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:layout_marginTop="13dp"
+        android:src="@mipmap/icon_interest_renqi" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/com_border_margin"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_course">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33314_style"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="想象力到底对孩子有多重要？明白这个将会影响孩子一生！" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/text_red16_style"
+                android:layout_marginRight="3dp"
+                android:text="￥68"
+                android:textColor="@color/collect_red" />
+
+            <TextView
+                android:id="@+id/tv_old_price"
+                style="@style/text_9b12_style"
+                android:layout_centerVertical="true"
+                android:text="￥69" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/hline_fill_halfdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/com_border_margin" />
+</RelativeLayout>

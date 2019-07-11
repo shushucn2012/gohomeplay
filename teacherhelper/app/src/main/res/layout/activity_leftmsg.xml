@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <include layout="@layout/topbar_com_whole"/>
+
+    <EditText
+        android:id="@+id/edit_input_word"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/gffffff"
+        android:gravity="top"
+        android:hint="请输入留言..."
+        android:maxLength="500"
+        android:minLines="1"
+        android:padding="10dp"
+        android:textColorHint="@color/color_text_tip"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+
+</LinearLayout>

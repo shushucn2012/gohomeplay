@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mixiaoxiao.smoothcompoundbutton.SmoothRadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_btn"
+    style="@style/SettingsCellSingleCompoundButton"
+    android:text="小班"
+    android:textColor="@color/camera_bg" />

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/topbar_com" />
+
+    <RelativeLayout
+        android:background="@color/btn_bg_grey"
+        android:id="@+id/lay_1"
+        android:layout_below="@id/top_bar"
+        android:padding="@dimen/dp_22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/lay_inner"
+            android:background="@drawable/shape_corner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_96">
+            <TextView
+                android:id="@+id/tv_labl_clazz_name"
+                android:layout_centerHorizontal="true"
+                android:text="当代国际花园大班"
+                android:textColor="@color/camera_bg"
+                android:textSize="@dimen/sp_20"
+                android:layout_marginTop="@dimen/dp_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_qrcode"
+                android:layout_below="@id/tv_labl_clazz_name"
+                android:layout_centerHorizontal="true"
+                android:layout_width="240dp"
+                android:layout_height="240dp" />
+            <TextView
+                android:id="@+id/tv_3"
+                android:text="如果没有安装61区，请用微信扫一扫"
+                android:textColor="@color/tint_color"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_above="@id/tv_3"
+                android:text="使用首页扫码工具扫描上方二维码加入班级"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_22"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_6"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="微信邀请"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_corner_2"
+                android:drawableLeft="@mipmap/ic_launcher_round"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_14"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="QQ邀请"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_corner_2"
+                android:drawableLeft="@mipmap/ic_launcher_round"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_above="@id/lay_2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp_18"
+        android:textColor="@color/camera_bg"
+        android:text="可截图发送至家长，邀请加入班级"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

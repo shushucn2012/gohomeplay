@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:minHeight="90dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_quick"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_huanchuang" />
+
+    <TextView
+        android:id="@+id/tv_quick"
+        style="@style/text_66612_style"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:visibility="visible" />
+</LinearLayout>

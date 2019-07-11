@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com_whole" />
+
+    <LinearLayout
+        android:id="@+id/area_how_to_save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fff6f8"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/icon_how_to_save" />
+
+        <TextView
+            style="@style/text_66615_style"
+            android:layout_marginLeft="5dp"
+            android:text="如何将附件保存到电脑？"
+            android:textColor="@color/color_text_red_deep" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                style="@style/text_33318_style"
+                android:text="课件" />
+
+            <TextView
+                android:id="@+id/tv_files_num"
+                style="@style/text_99914_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="(0)" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_download_all"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_file_down" />
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill_halfdp"
+        android:layout_marginLeft="@dimen/com_border_margin" />
+
+    <ListView
+        android:id="@+id/lv_files"
+        style="@style/com_lv_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

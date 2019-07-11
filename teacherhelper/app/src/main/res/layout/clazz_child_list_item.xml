@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.park61.teacherhelper.widget.listview.MyRItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="412dp"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/area_item_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@color/gffffff"
+                    android:gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/img_clazz_qr" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            style="@style/text_33315_style"
+                            android:text="LULU" />
+
+                        <TextView
+                            android:id="@+id/tv_relations"
+                            style="@style/text_99912_style"
+                            android:layout_marginTop="2dp"
+                            android:text="2亲人" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/bottom_line"
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="70dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="73dp"
+                android:layout_height="70dp"
+                android:background="@color/com_orange"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.park61.teacherhelper.widget.listview.MyRItem>

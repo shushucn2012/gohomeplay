@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="backClick"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="shareClick"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="signDataClick"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.park61.teacherhelper.widget.listview.ObservableScrollView
+            android:id="@+id/content_sroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/top_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/img_default_h" />
+
+                    <ImageView
+                        android:id="@+id/activity_state"
+                        android:layout_width="48dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/activity_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="贝玛教育活动"
+                        android:textColor="@color/g000000"
+                        android:textSize="17sp" />
+
+                    <!--活动简介 -->
+                    <TextView
+                        android:id="@+id/activity_intro"
+                        style="@style/text_99914_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="贝玛教育" />
+                </LinearLayout>
+
+
+                <View style="@style/between_view" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        style="@style/text_22214_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_activity_time"
+                        android:drawablePadding="4dp"
+                        android:text="@string/activity_time" />
+
+                    <TextView
+                        android:id="@+id/activity_time"
+                        style="@style/text_22214_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View style="@style/between_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        style="@style/text_22214_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_activity_site"
+                        android:drawablePadding="4dp"
+                        android:text="@string/activity_site" />
+
+                    <TextView
+                        android:id="@+id/activity_site"
+                        style="@style/text_22214_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View style="@style/between_view" />
+
+                <TextView
+                    style="@style/text_22214_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="14dp"
+                    android:drawableLeft="@mipmap/icon_activity_notice"
+                    android:drawablePadding="4dp"
+                    android:text="@string/activity_notice" />
+
+                <com.park61.teacherhelper.widget.webview.ShowImageWebView
+                    android:id="@+id/wv_notice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp" />
+
+                <LinearLayout
+                    android:id="@+id/toy_llyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                <View style="@style/between_view" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="14dp"
+                    >
+                    <TextView
+                        style="@style/text_22214_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_activity_arms"
+                        android:drawablePadding="4dp"
+                        android:text="@string/activity_arms" />
+                    <TextView
+                        android:id="@+id/arms_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arms_more"
+                        style="@style/text_22214_style"
+                        android:visibility="gone"
+                        android:drawableRight="@mipmap/icon_right_2"
+                        />
+                </LinearLayout>
+
+				<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/arms_1"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+                        <ImageView
+                            android:id="@+id/arms1_img"
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/img_default_v"
+                            />
+
+                        <TextView
+                            android:id="@+id/arms1_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/text_22214_style"
+                            android:text="积木早教玩具"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginTop="12dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="bottom"
+                            android:layout_marginTop="6dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/arms1_curr_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/text_red16_style2"
+                                android:text="￥168.0"
+                                />
+
+                            <TextView
+                                android:id="@+id/arms1_orig_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/text_99912_style"
+                                android:layout_marginLeft="5dp"
+                                android:text="￥168.0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/arms_2"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        >
+                        <ImageView
+                            android:id="@+id/arms2_img"
+                            android:layout_width="165dp"
+                            android:layout_height="165dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/img_default_v"
+                            />
+
+                        <TextView
+                            android:id="@+id/arms2_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/text_22214_style"
+                            android:text="积木早教玩具"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginTop="12dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="bottom"
+                            android:layout_marginTop="6dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/arms2_curr_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/text_red16_style2"
+                                android:text="￥168.0"
+                                />
+
+                            <TextView
+                                android:id="@+id/arms2_orig_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/text_99912_style"
+                                android:layout_marginLeft="5dp"
+                                android:text="￥168.0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                </LinearLayout>
+                <View style="@style/between_view" />
+
+                <TextView
+                    style="@style/text_22214_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="14dp"
+                    android:drawableLeft="@mipmap/icon_activity_detail"
+                    android:drawablePadding="4dp"
+                    android:text="@string/activity_detail" />
+
+                <com.park61.teacherhelper.widget.webview.ShowImageWebView
+                    android:id="@+id/wv_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/gray" />
+            </LinearLayout>
+
+        </com.park61.teacherhelper.widget.listview.ObservableScrollView>
+
+        <TextView
+            android:id="@+id/activity_close"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:background="@color/activity_close"
+            android:gravity="center"
+            style="@style/text_fff16_style"
+            android:text="@string/activity_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/text_fff16_style"
+                android:onClick="@{signDataClick}"
+                android:background="@color/activity_data_color"
+                android:text="@string/activity_data"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/text_fff16_style"
+                android:onClick="@{shareClick}"
+                android:background="@color/activity_sign"
+                android:text="@string/activity_share"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+
+        <View
+            android:id="@+id/title_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:alpha="0.5"
+            android:onClick="@{backClick}"
+            android:src="@mipmap/icon_content_backimg" />
+
+        <TextView
+            android:id="@+id/top_bar_title"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/g000000"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/shareImg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.5"
+            android:onClick="@{shareClick}"
+            android:src="@mipmap/contents_share"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

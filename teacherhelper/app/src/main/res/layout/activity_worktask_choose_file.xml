@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/gffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:id="@+id/serach_area"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/area_country"
+            android:background="@drawable/rec_gray_stroke_gray_solid_corner30"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edit_sousuo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="输入课程标题"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingLeft="40dp"
+                android:paddingRight="30dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gc9bec2"
+                android:textColor="@color/g333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_sousuo"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/xiaosousuo" />
+
+            <ImageView
+                android:id="@+id/img_del"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/shanchu"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_whole"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gffffff"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff">
+
+        <TextView
+            android:id="@+id/tv_chosen_num"
+            style="@style/text_33315_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="已选择：0" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rec_gray_stroke_gray_solid_corner30"
+            android:text="确定"
+            android:textColor="@color/g999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

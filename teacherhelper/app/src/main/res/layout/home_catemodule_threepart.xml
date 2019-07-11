@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:id="@+id/tv_module_title"
+        style="@style/text_33316_style"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="类目组件" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp">
+
+        <ImageView
+            android:id="@+id/img0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_default_h" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gffffff" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_default_v" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gffffff" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_default_v" />
+    </LinearLayout>
+
+    <!--<com.gcssloop.widget.RCRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@color/gf8f8f8"
+        app:clip_background="true"
+        app:round_corner="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/strut"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title0"
+                style="@style/text_33315_style"
+                android:singleLine="true"
+                android:text="体育游戏" />
+
+            <TextView
+                android:id="@+id/tv_desc0"
+                style="@style/text_99912_style"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="释放孩子好玩的天性" />
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_default_h" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/strut"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/strut"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/strut"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title1"
+                    style="@style/text_33315_style"
+                    android:singleLine="true"
+                    android:text="体育游戏" />
+
+                <TextView
+                    android:id="@+id/tv_desc1"
+                    style="@style/text_99912_style"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text="释放孩子好玩的天性" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_default_h" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gffffff" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/strut"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title2"
+                    style="@style/text_33315_style"
+                    android:singleLine="true"
+                    android:text="体育游戏" />
+
+                <TextView
+                    android:id="@+id/tv_desc2"
+                    style="@style/text_99912_style"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text="释放孩子好玩的天性" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_default_h" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.gcssloop.widget.RCRelativeLayout>-->
+
+</LinearLayout>

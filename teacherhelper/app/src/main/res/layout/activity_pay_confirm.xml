@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/gcccccc" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@id/top_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/area_input_contactor"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_rname"
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_rphone"
+                    style="@style/text_33314_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/addr_img"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_caitiao" />
+
+            <RelativeLayout
+                android:id="@+id/area_course_info"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/gffffff"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/img_course"
+                    android:layout_width="105dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_default_v" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_course"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_course_title"
+                        style="@style/text_33314_style"
+                        android:ellipsize="end"
+                        android:lines="3"
+                        android:maxLines="3"
+                        android:layout_alignParentTop="true"
+                        android:text=""
+                        android:layout_above="@+id/tv_goods_price"/>
+
+                    <TextView
+                        android:id="@+id/tv_goods_price"
+                        style="@style/text_33314_style"
+                        android:textColor="@color/color_text_red_deep"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="￥0.00" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_coupon_choose"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/gffffff"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_canuse_coupon_count"
+                    style="@style/text_33314_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text="优惠券" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_reduce_money"
+                        style="@style/text_66614_style"
+                        android:layout_marginLeft="3dp"
+                        android:text="无可用" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="金额" />
+
+                    <TextView
+                        android:id="@+id/tv_total_price"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="￥0.00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="优惠券" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_money"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="-￥0.00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_centerVertical="true"
+                        android:text="总计" />
+
+                    <TextView
+                        android:id="@+id/tv_final_money"
+                        style="@style/text_33314_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="+￥0.00" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_dikou"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/gffffff"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_dikou"
+                    style="@style/text_33314_style"
+                    android:textColor="@color/com_orange"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text="61学院为您抵扣" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_dikou_money"
+                        style="@style/text_66614_style"
+                        android:textColor="@color/com_orange"
+                        android:layout_marginLeft="3dp"
+                        android:text="-￥0.00" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/tv_total_label"
+            style="@style/text_33314_style"
+            android:layout_centerVertical="true"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/tv_total_money"
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_total_label"
+            android:text="￥0.00"
+            android:textColor="@color/com_orange" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/color_text_red_deep"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/gffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

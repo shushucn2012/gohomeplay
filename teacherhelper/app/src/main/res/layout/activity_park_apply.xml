@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="topClick"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="applyClick"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <com.park61.teacherhelper.widget.listview.ObservableScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_bar_list">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/top_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="198dp"
+                    android:onClick="@{topClick}"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/park_top_img" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-55dp">
+
+                    <LinearLayout
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_corner_8w"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/text_99914_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="18dp"
+                            android:text="线上需提供" />
+
+                        <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                            android:id="@+id/gridInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:numColumns="3" />
+
+                        <TextView
+                            android:id="@+id/bottom_bar_first"
+                            style="@style/text_fff18_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/shape_corner_100f4"
+                            android:gravity="center"
+                            android:onClick="@{applyClick}"
+                            android:text="立即申请" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/apply_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                            android:id="@+id/apply_lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:divider="@android:color/transparent"
+                            android:dividerHeight="0dp"
+                            android:listSelector="@color/transparent" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </com.park61.teacherhelper.widget.listview.ObservableScrollView>
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:id="@+id/area_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:src="@mipmap/icon_content_backimg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/page_title"
+                style="@style/topbar_title_style"
+                android:text="基地园申请"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bottom_bar_list"
+            style="@style/text_fff18_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gfb4364"
+            android:gravity="center"
+            android:onClick="@{applyClick}"
+            android:text="立即申请" />
+    </RelativeLayout>
+</layout>

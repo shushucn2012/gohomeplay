@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="status_bar_margin">32dp</dimen>
+    <dimen name="activity_title_height">69dp</dimen>
+</resources>

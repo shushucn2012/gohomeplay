@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_white_stroke_white_solid_corner10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/area_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_33318_style"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:text="李老师艺术课小一班李老师艺术课小一班李老师艺术课小一班李老师艺术课小一班" />
+
+            <ImageView
+                android:id="@+id/img_right_arrow"
+                style="@style/adjust_arrow_style" />
+
+            <ImageView
+                android:id="@+id/img_right_setting"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_person_grop_setting"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tempname"
+            style="@style/text_66614_style"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Steam艺术课行事历" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.park61.teacherhelper.widget.progress.RoundProgressBar
+                    android:id="@+id/roundProgressBar1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:roundColor="@color/g33FFD520"
+                    app:roundProgressColor="@color/gFFD520"
+                    app:roundWidth="5dp"
+                    app:textColor="@color/g333333"
+                    app:textSize="18sp" />
+
+                <TextView
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="10dp"
+                    android:text="工作完成" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="72dp"
+                    android:layout_height="72dp">
+
+                    <com.park61.teacherhelper.widget.progress.RoundProgressBar
+                        android:id="@+id/roundProgressBar2"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        app:roundColor="@color/g33FF8FA3"
+                        app:roundProgressColor="@color/gFF8FA3"
+                        app:roundWidth="5dp"
+                        app:textColor="@color/g333333"
+                        app:textIsDisplayable="false"
+                        app:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_delay_num"
+                        style="@style/text_33318_style"
+                        android:layout_gravity="center"
+                        android:text="3" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_delay_desc"
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="10dp"
+                    android:text="逾期工作 / 件" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_notice"
+            android:layout_width="136dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rec_deepred_stroke_deepred_solid_corner30"
+            android:text="通知园长督办"
+            android:textColor="@color/gffffff"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+</LinearLayout>

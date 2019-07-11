@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="goBack"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style">
+
+            <LinearLayout
+                android:id="@+id/area_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:onClick="@{goBack}"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:src="@mipmap/icon_red_backimg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/page_title"
+                style="@style/topbar_title_style"
+                android:text="@string/toys_recommend" />
+        </RelativeLayout>
+
+        <View style="@style/between_line"/>
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/toys_lv"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</layout>

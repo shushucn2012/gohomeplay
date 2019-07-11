@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.park61.teacherhelper.module.workplan.calendarview.MonthView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/calendar_month_title_bottommargin"
+        android:paddingTop="@dimen/calendar_month_topmargin"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.park61.teacherhelper.module.workplan.calendarview.CalendarGridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarRowView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="@dimen/calendar_day_headers_paddingbottom"
+            android:visibility="visible">
+
+            <TextView style="@style/text_calendar_top_weekday_style" />
+
+            <TextView style="@style/text_calendar_top_weekday_style" />
+
+            <TextView style="@style/text_calendar_top_weekday_style" />
+
+            <TextView style="@style/text_calendar_top_weekday_style" />
+
+            <TextView style="@style/text_calendar_top_weekday_style" />
+
+            <TextView style="@style/text_calendar_top_weekday_style" />
+
+            <TextView style="@style/text_calendar_top_weekday_style" />
+        </com.park61.teacherhelper.module.workplan.calendarview.CalendarRowView>
+
+        <include layout="@layout/week_plan" />
+
+        <include layout="@layout/week_plan" />
+
+        <include layout="@layout/week_plan" />
+
+        <include layout="@layout/week_plan" />
+
+        <include layout="@layout/week_plan" />
+
+        <include layout="@layout/week_plan" />
+
+    </com.park61.teacherhelper.module.workplan.calendarview.CalendarGridView>
+</com.park61.teacherhelper.module.workplan.calendarview.MonthView>

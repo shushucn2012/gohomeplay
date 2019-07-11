@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gffffff"
+        android:gravity="center"
+        android:text="选择您的职务"
+        android:textColor="@color/g999999"
+        android:textSize="14sp" />
+
+    <View style="@style/between_line" />
+
+    <ListView
+        android:id="@+id/dialog_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#eeeeee"
+        android:divider="@color/gray"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@color/gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/gray"
+        />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="取消"
+        android:gravity="center"
+        style="@style/text_red18_style2"
+        />
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:text="发布照片" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/text_colorred_14_style"
+                android:paddingRight="@dimen/com_border_margin"
+                android:text="确定" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_input_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gffffff"
+                android:gravity="top"
+                android:hint="有标题更受欢迎（5-32字）"
+                android:maxLength="32"
+                android:minLines="1"
+                android:padding="10dp"
+                android:textColorHint="@color/color_text_tip"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/line_title"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/color_text2"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edit_input_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gffffff"
+                android:gravity="top"
+                android:hint="秀出你的文采，不少于5个字"
+                android:maxLength="140"
+                android:minLines="1"
+                android:padding="10dp"
+                android:textColorHint="@color/color_text_tip"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_add_pic"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_add_pic" />
+
+            <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_input_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:background="@color/gffffff"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:verticalSpacing="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/text_color1_14_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:text="发布班级" />
+
+            <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                android:id="@+id/lv_classes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="20dp"
+                android:listSelector="@color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

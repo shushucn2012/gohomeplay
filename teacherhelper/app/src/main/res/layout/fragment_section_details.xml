@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_refresh_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    ptr:ptrHeaderBackground="@color/gffffff"
+    ptr:ptrHeaderTextColor="@color/g666666"
+    ptr:ptrMode="disabled">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/circle_shape_gray"/>
+
+                <TextView
+                    style="@style/text_color1_14_style"
+                    android:text="标题" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_color1_14_style"
+                    android:layout_marginLeft="8dp"
+                    android:text=""
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/circle_shape_gray"/>
+
+                <TextView
+                    style="@style/text_color1_14_style"
+                    android:text="类别" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/text_color1_14_style"
+                    android:layout_marginLeft="8dp"
+                    android:text="创造力课程"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/circle_shape_gray"/>
+
+                <TextView
+                    style="@style/text_color1_14_style"
+                    android:text="作者" />
+
+                <TextView
+                    android:id="@+id/tv_creator"
+                    style="@style/text_color1_14_style"
+                    android:layout_marginLeft="8dp"
+                    android:text="小提莫 著"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_create_time"
+                    style="@style/text_color1_14_style"
+                    android:layout_marginLeft="25dp"
+                    android:text="17/8/20"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ask_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_hotgame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@color/gffffff"
+        android:minHeight="71dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_course"
+            android:layout_width="120dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_default_h"
+            app:riv_corner_radius="5dp"
+            app:riv_oval="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/img_course">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_33315_style"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="培养宝宝创造力从3岁培养宝宝创造力从3岁" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_teacher"
+                    style="@style/text_99912_style"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="DOM老师" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@mipmap/icon_read" />
+
+                    <TextView
+                        android:id="@+id/tv_read_num"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:text="33" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/area_operate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#66666666"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/gffffff"
+            android:gravity="center"
+            android:text="置顶" />
+
+        <TextView
+            android:id="@+id/tv_cancel_collect"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/gffffff"
+            android:gravity="center"
+            android:text="取消收藏" />
+    </LinearLayout>
+</LinearLayout>

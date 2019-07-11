@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_small_cate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_bottom"
+        android:background="@color/gffffff"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent" />
+
+    <View
+        android:id="@+id/linear_bottom"
+        style="@style/hline_fill_top"
+        android:layout_above="@+id/area_button" />
+
+    <LinearLayout
+        android:id="@+id/area_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gffffff"
+            android:text="重置" />
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_text_red_deep"
+            android:text="确定"
+            android:textColor="@color/gffffff" />
+    </LinearLayout>
+</RelativeLayout>

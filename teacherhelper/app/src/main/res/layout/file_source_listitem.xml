@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <ImageView
+            android:id="@+id/img_file_cover"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:src="@mipmap/img_default_v" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/area_download_state"
+            android:layout_toRightOf="@+id/img_file_cover"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_source_title"
+                style="@style/text_33315_style"
+                android:singleLine="true"
+                android:text="可爱的二年级：大脚丫和小脚丫学芭蕾大脚丫和小脚丫学芭蕾" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_source_format"
+                    style="@style/text_99910_style"
+                    android:text="ppt" />
+
+                <TextView
+                    android:id="@+id/tv_download_times"
+                    style="@style/text_99910_style"
+                    android:layout_marginLeft="25dp"
+                    android:text="1.8W次下载" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_download_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingTop="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="@dimen/com_border_margin">
+
+            <ImageView
+                android:id="@+id/img_download_state"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/icon_file_down" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/linear_bottom"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        style="@style/hline_fill_halfdp" />
+</LinearLayout>

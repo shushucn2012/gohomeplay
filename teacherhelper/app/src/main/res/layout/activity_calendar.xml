@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="dateClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/top_white"
+            android:layout_width="match_parent"
+            android:layout_height="109dp" />
+
+        <LinearLayout
+            android:id="@+id/top_sev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_c9b14_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周日" />
+
+            <TextView
+                style="@style/text_c9b14_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周一" />
+
+            <TextView
+                style="@style/text_c9b14_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周二" />
+
+            <TextView
+                style="@style/text_c9b14_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周三" />
+
+            <TextView
+                style="@style/text_c9b14_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周四" />
+
+            <TextView
+                style="@style/text_c9b14_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周五" />
+
+            <TextView
+                style="@style/text_c9b14_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周六" />
+        </LinearLayout>
+
+        <com.necer.ncalendar.calendar.NCalendar
+            android:id="@+id/myCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_sev"
+            app:calendarHeight="240dp"
+            app:firstDayOfWeek="Sunday"
+            app:hintColor="@color/gffffff"
+            app:hollowCircleColor="@color/gfb4364"
+            app:isShowHoliday="false"
+            app:isShowLunar="false"
+            app:pointColor="@color/calendar_point"
+            app:pointSize="4dp"
+            app:selectCircleColor="@color/gfb4364"
+            app:selectCircleRadius="16dp"
+            app:solarTextColor="@color/g666666"
+            app:solarTextSize="14sp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rLv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+        </com.necer.ncalendar.calendar.NCalendar>
+
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/topbar_com_whole" />
+
+        <TextView
+            android:id="@+id/click_tv"
+            style="@style/text_33320_style"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:drawablePadding="4dp"
+            android:drawableRight="@mipmap/xiala"
+            android:onClick="@{dateClick}"
+            android:text="2018.04"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</layout>

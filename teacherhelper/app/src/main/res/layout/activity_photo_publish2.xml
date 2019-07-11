@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_righttext" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_info"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="请输入介绍..."
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin"
+                android:paddingTop="10dp"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/gc9bec2"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/img_add_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/icon_add_pic" />
+            </LinearLayout>
+
+            <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                android:id="@+id/gv_input_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:background="@color/white"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:verticalSpacing="10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

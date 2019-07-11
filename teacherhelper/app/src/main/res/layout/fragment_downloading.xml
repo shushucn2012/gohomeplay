@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="pauseClick"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="manageClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/manage_rylt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/download_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:onClick="@{pauseClick}"
+                android:src="@mipmap/icon_waiting" />
+
+            <TextView
+                android:id="@+id/download_state"
+                style="@style/text_33318_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/download_icon"
+                android:onClick="@{pauseClick}"
+                android:text="@string/pause_all" />
+
+            <TextView
+                style="@style/text_66615_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:drawableLeft="@mipmap/icon_manage"
+                android:onClick="@{manageClick}" />
+
+            <View
+                style="@style/hline_fill_top"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray"
+                    android:orientation="vertical">
+
+                    <com.park61.teacherhelper.widget.listview.RecyclerViewForScrollView
+                        android:id="@+id/downloadingLv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.park61.teacherhelper.widget.listview.RecyclerViewForScrollView
+                        android:id="@+id/downloadingFileLv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/lv_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/icon_cotent_empty" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

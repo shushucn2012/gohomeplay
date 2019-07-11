@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_big_pic_height"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_toy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_default_v"
+            app:riv_corner_radius="2dp" />
+
+        <ImageView
+            android:id="@+id/img_can_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_play_big"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_vip"
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/icon_content_item_vip"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/tv_get_num"
+                style="@style/text_fff14_style"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33316_style"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="我是超级无敌大哥级飞机我是超级无敌大哥级飞机我是超级无敌大哥级飞机" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@+id/area_time"
+                android:gravity="center_vertical">
+
+                <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/headimg_default_img" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_99914_style"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gcccccc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/text_99912_style"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/gcccccc" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/between_line"
+        android:layout_marginBottom="10dp" />
+</LinearLayout>

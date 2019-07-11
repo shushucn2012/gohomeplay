@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bigcate_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:gravity="center_vertical"
+    android:minHeight="41dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_cate_name"
+        style="@style/text_33314_style"
+        android:singleLine="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="@dimen/com_border_margin"
+        android:text="品牌" />
+</LinearLayout>

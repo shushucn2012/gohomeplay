@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gfff7f7"
+                android:orientation="vertical"
+                android:padding="@dimen/com_border_margin">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/text_33316_style"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    style="@style/text_66614_style"
+                    android:layout_marginTop="8dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@mipmap/icon_default_info" />
+
+                <TextView
+                    style="@style/text_33318_style"
+                    android:layout_marginLeft="15dp"
+                    android:text="基础信息" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    style="@style/text_66615_style"
+                    android:text="园所类型:" />
+
+                <TextView
+                    android:id="@+id/tv_group_type"
+                    style="@style/text_33314_style"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_corner_100f4"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/gffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    style="@style/text_66615_style"
+                    android:text="园所名称:" />
+
+                <TextView
+                    android:id="@+id/tv_group_name"
+                    style="@style/text_33315_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    style="@style/text_66615_style"
+                    android:text="园所地址:" />
+
+                <TextView
+                    android:id="@+id/tv_group_addr"
+                    style="@style/text_33315_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    style="@style/text_66615_style"
+                    android:text="园所地址:"
+                    android:textColor="@color/gffffff" />
+
+                <TextView
+                    android:id="@+id/tv_groupp_detail_addr"
+                    style="@style/text_33315_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    style="@style/text_66615_style"
+                    android:text="联系人:    " />
+
+                <TextView
+                    android:id="@+id/tv_contactor"
+                    style="@style/text_33315_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/com_border_margin"
+                android:paddingRight="@dimen/com_border_margin">
+
+                <TextView
+                    style="@style/text_66615_style"
+                    android:text="联系电话:" />
+
+                <TextView
+                    android:id="@+id/tv_contact_phone"
+                    style="@style/text_33315_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/gffffff" />
+
+            <View style="@style/hline_fill" />
+
+            <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                android:id="@+id/lv_zz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@color/transparent" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bottom_bar"
+        style="@style/text_fff18_style"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_text_red_deep"
+        android:text="重新提交" />
+</RelativeLayout>

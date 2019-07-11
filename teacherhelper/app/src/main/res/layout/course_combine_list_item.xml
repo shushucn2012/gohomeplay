@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:background="@color/gffffff"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/left_area_root"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_goods_left"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@mipmap/img_default_v"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="false" />
+
+            <TextView
+                android:id="@+id/tv_goods_name_left"
+                style="@style/text_33314_style"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="变形金刚4 合金版大黄蜂擎天柱汽车人模型儿童玩具" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_teacher_left"
+                    style="@style/text_99912_style"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="DOM老师" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@mipmap/icon_read" />
+
+                    <TextView
+                        android:id="@+id/tv_read_num_left"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:text="33" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:background="@color/gffffff" />
+
+        <LinearLayout
+            android:id="@+id/right_area_root"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_goods_right"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@mipmap/img_default_v"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="10dp"
+                app:riv_oval="false" />
+
+            <TextView
+                android:id="@+id/tv_goods_name_right"
+                style="@style/text_33314_style"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="变形金刚4 合金版大黄蜂擎天柱汽车人模型儿童玩具" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_teacher_right"
+                    style="@style/text_99912_style"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="DOM老师" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@mipmap/icon_read" />
+
+                    <TextView
+                        android:id="@+id/tv_read_num_right"
+                        style="@style/text_99912_style"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:text="33" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/hline_fill"
+        android:layout_height="3dp"
+        android:visibility="gone"
+        android:background="@color/bg_color"/>
+
+</LinearLayout>

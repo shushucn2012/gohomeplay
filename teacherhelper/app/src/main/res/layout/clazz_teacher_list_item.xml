@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:padding="@dimen/dp_10"
+    android:minHeight="90dp">
+
+    <LinearLayout
+        android:id="@+id/lay_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/img_clazz_qr" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/lay_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LULU"
+                android:maxLines="2"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="normal"
+                android:textColor="@color/btn_stroke"/>
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_below="@id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13888888888"/>
+            <ImageView
+                android:id="@+id/img_call_view"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_22"
+                android:src="@mipmap/img_call"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

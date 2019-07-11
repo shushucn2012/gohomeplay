@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppLayout_white">
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        style="@style/AppTitle_Layout">
+
+        <TextView
+            style="@style/AppTitle_TextView"
+            android:text="专家简介" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/AppTitle_BackView"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/top_bar"
+        android:max="100"
+        android:progress="0" />
+
+    <WebView
+        android:id="@+id/wvContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

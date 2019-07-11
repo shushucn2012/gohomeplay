@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="deleteData"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray">
+
+        <RelativeLayout style="@style/topbar_area_style"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+
+            <TextView
+                android:id="@+id/select_all"
+                style="@style/text_red15_style2"
+                android:layout_centerVertical="true"
+                android:text="全选"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                style="@style/text_22217_style"
+                android:text="批量操作"
+                />
+
+            <TextView
+                android:id="@+id/complete"
+                style="@style/text_red15_style2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="完成"
+                />
+        </RelativeLayout>
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#f5f5f9"
+            android:background="@color/gray"
+            />
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="删除"
+            style="@style/text_fff16_style"
+            android:onClick="@{deleteData}"
+            android:background="@color/color_text_red_deep"
+            />
+    </LinearLayout>
+</layout>

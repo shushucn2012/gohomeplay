@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    style="@style/topbar_area_style">
+
+    <LinearLayout
+        android:id="@+id/area_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:src="@mipmap/icon_red_backimg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/page_title"
+        style="@style/topbar_title_style"
+        android:text="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/area_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/text_red15_style"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:text="保存"/>
+    </LinearLayout>
+</RelativeLayout>

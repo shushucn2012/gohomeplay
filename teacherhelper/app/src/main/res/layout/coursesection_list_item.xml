@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:minHeight="48dp">
+
+    <ImageView
+        android:id="@+id/img_teacher"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:src="@mipmap/icon_course_section" />
+
+    <TextView
+        android:id="@+id/tv_teacher_name"
+        style="@style/text_33314_style"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/tv_course_time"
+        android:layout_toRightOf="@+id/img_teacher"
+        android:singleLine="true"
+        android:maxWidth="200dp"
+        android:ellipsize="end"
+        android:text="1、抽象思维，帮助孩子更好的认知" />
+
+    <TextView
+        android:id="@+id/tv_course_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/com_border_margin"
+        android:text="32分钟"
+        android:textColor="@color/color_text2"
+        android:textSize="12sp" />
+</RelativeLayout>

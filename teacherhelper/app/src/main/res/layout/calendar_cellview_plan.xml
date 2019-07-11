@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/area_cell_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/text_fff11_style"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/g333333"
+            android:text="13"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/red_dot"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/circle_shape_red"
+        android:visibility="gone"/>
+
+</RelativeLayout>

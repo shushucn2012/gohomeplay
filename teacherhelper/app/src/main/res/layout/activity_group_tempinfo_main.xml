@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/group_tempmain_bg"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrHeaderBackground="@color/gffffff"
+        ptr:ptrHeaderTextColor="@color/g999999"
+        ptr:ptrMode="pullFromStart">
+
+        <com.handmark.pulltorefresh.library.ObservableScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_content_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="86dp"
+                        android:layout_marginTop="190dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/bg_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="155dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="106dp"
+                        android:background="@drawable/rec_white_stroke_white_solid_corner10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_group_name"
+                            style="@style/text_33320_style"
+                            android:layout_marginLeft="135dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="11dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/area_all_task_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp">
+
+                            <LinearLayout
+                                android:id="@+id/area_undo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_undone_num"
+                                    style="@style/text_33318_style"
+                                    android:text=""
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/text_66612_style"
+                                    android:layout_marginTop="1dp"
+                                    android:text="待办" />
+                            </LinearLayout>
+
+                            <View
+                                style="@style/vline_fill"
+                                android:layout_marginTop="15dp" />
+
+                            <LinearLayout
+                                android:id="@+id/area_done"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_finish_num"
+                                    style="@style/text_33318_style"
+                                    android:text=""
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/text_66612_style"
+                                    android:layout_marginTop="1dp"
+                                    android:text="已完成" />
+                            </LinearLayout>
+
+                            <View
+                                style="@style/vline_fill"
+                                android:layout_marginTop="15dp" />
+
+                            <LinearLayout
+                                android:id="@+id/area_delay"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_delayed_num"
+                                    style="@style/text_33318_style"
+                                    android:text=""
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    style="@style/text_66612_style"
+                                    android:layout_marginTop="1dp"
+                                    android:text="逾期" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@mipmap/icon_groupheader_bg"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_group_header"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@mipmap/icon_groupheader_default" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/bg_color">
+
+                    <LinearLayout
+                        android:id="@+id/area_empty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="134dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@mipmap/icon_cotent_empty" />
+
+                        <TextView
+                            style="@style/text_66615_style"
+                            android:layout_marginTop="15dp"
+                            android:text="暂无任务～" />
+                    </LinearLayout>
+
+                    <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                        android:id="@+id/lv_task_done_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="@color/transparent"
+                        android:divider="@color/transparent"
+                        android:dividerHeight="0dp"
+                        android:listSelector="@color/transparent"
+                        android:visibility="visible" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.ObservableScrollView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_right_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_content_backimg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style" />
+    </RelativeLayout>
+
+</RelativeLayout>

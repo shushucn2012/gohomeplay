@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderBackground="@color/bg_color"
+        ptr:ptrHeaderTextColor="@color/g999999"
+        ptr:ptrMode="disabled" />-->
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="133dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rec_deepred_stroke_trans_solid_corner30"
+        android:text="批量设置为已完成"
+        android:textColor="@color/color_text_red_deep"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/rv_firsthead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_done"
+        android:layout_marginTop="2dp" />
+
+    <LinearLayout
+        android:id="@+id/area_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/quexing"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/text_99914_style"
+            android:layout_marginTop="20dp"
+            android:text="暂无计划~" />
+
+        <TextView
+            style="@style/text_99914_style"
+            android:layout_marginTop="6dp"
+            android:text="赶紧用掉优惠券才不亏"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/hline_fill" />
+
+        <TextView
+            style="@style/text_33316_style"
+            android:layout_marginTop="15dp"
+            android:text="不使用优惠券" />
+    </LinearLayout>
+
+</RelativeLayout>

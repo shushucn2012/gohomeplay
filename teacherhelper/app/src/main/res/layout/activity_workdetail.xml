@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_finish"
+        android:layout_below="@id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/area_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingRight="12dp">
+
+                    <ImageView
+                        android:id="@+id/img_task_state"
+                        android:layout_width="80dp"
+                        android:layout_height="36dp"
+                        android:src="@mipmap/icon_taskstate_undone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_33314_style"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:text=""
+                    android:textSize="21sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:paddingLeft="@dimen/com_border_margin"
+                    android:paddingRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            style="@style/text_33314_style"
+                            android:text=""
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_start_weekday"
+                            style="@style/text_99912_style"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_time_mid_arrow" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            style="@style/text_33314_style"
+                            android:text=""
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_end_weekday"
+                            style="@style/text_99912_style"
+                            android:text="" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="@dimen/com_border_margin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:padding="@dimen/com_border_margin">
+
+                    <TextView
+                        style="@style/text_99915_style"
+                        android:layout_centerVertical="true"
+                        android:text="执行人" />
+
+                    <TextView
+                        android:id="@+id/tv_doperson"
+                        style="@style/text_33315_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="90dp"
+                        android:gravity="right"
+                        android:text="" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/hline_fill_halfdp"
+                    android:layout_marginLeft="@dimen/com_border_margin" />
+
+                <TextView
+                    android:id="@+id/tv_task_desc"
+                    style="@style/text_99915_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="@dimen/com_border_margin"
+                    android:paddingRight="@dimen/com_border_margin"
+                    android:paddingTop="20dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/area_task_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_file_label"
+                    style="@style/text_33318_style"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_marginTop="18dp"
+                    android:text="参考文档" />
+
+                <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                    android:id="@+id/lv_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_task_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/gffffff"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_33318_style"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:layout_marginTop="18dp"
+                    android:text="任务状态" />
+
+                <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+                    android:id="@+id/lv_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@color/transparent" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/com_orange"
+        android:text="工作完成"
+        android:textColor="@color/gffffff"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/area_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gffffff"
+        android:clickable="true"
+        android:layout_below="@+id/top_bar"/>
+
+</RelativeLayout>

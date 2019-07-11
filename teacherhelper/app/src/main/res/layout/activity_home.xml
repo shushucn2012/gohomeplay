@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+        <LinearLayout
+            android:id="@+id/area_left_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_scan" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:layout_width="88dp"
+            android:layout_height="21dp"
+            android:src="@mipmap/icon_home_title" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:src="@mipmap/icon_msg"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        ptr:ptrHeaderBackground="@color/gffffff"
+        ptr:ptrHeaderTextColor="@color/g666666"
+        ptr:ptrMode="pullFromStart">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/banner_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/top_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <include
+                        android:id="@+id/top_vp_dot"
+                        layout="@layout/home_pageview_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gffffff"
+                    android:layout_height="10dp" />
+
+                <include
+                    android:id="@+id/area_date_show"
+                    layout="@layout/course_grid_layout" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gffffff"
+                    android:layout_height="10dp" />
+
+                <include
+                    android:id="@+id/area_lesson_plan_show"
+                    layout="@layout/lessonplan_grid_layout" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/gffffff"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+        </ScrollView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

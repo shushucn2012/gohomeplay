@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/icon_red_backimg" />
+
+            <TextView
+                style="@style/text_33316_style"
+                android:text="返回" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_big_tip"
+        style="@style/text_33318_style"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="80dp"
+        android:text="手机号免密登录" />
+
+    <TextView
+        android:id="@+id/tv_small_tip"
+        style="@style/text_99912_style"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="14dp"
+        android:text="新用户验证登录后自动注册" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/icon_input_phone_num" />
+
+            <EditText
+                android:id="@+id/edit_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/hline_fill_dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rec_unpress_stroke_unpress_solid_corner30"
+        android:text="下一步"
+        android:textColor="@color/gffffff"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

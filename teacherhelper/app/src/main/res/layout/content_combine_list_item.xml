@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/area_top_space"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin">
+
+        <LinearLayout
+            android:id="@+id/left_area_root"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_goods_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_bothone_pic_height"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_default_v"
+                    app:riv_corner_radius_top_left="5dp"
+                    app:riv_corner_radius_top_right="5dp"
+                    app:riv_oval="false" />
+
+                <ImageView
+                    android:id="@+id/img_can_play_left"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_play_big"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_vip_left"
+                    android:layout_width="22dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/icon_content_item_vip"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rec_white_stroke_white_solid_cornerbottom5"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_goods_name_left"
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:text="变形金刚4 合金版大黄蜂擎天柱汽车人模型儿童玩具" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                        android:id="@+id/img_teacher_left"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/headimg_default_img" />
+
+                    <TextView
+                        android:id="@+id/tv_teacher_left"
+                        style="@style/text_99912_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toLeftOf="@+id/area_praise_num"
+                        android:layout_toRightOf="@+id/img_teacher_left"
+                        android:singleLine="true"
+                        android:text="DOM老师" />
+
+                    <LinearLayout
+                        android:id="@+id/area_praise_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="11dp"
+                            android:layout_height="11dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@mipmap/icon_prase_list" />
+
+                        <TextView
+                            android:id="@+id/tv_read_num_left"
+                            style="@style/text_99912_style"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="33" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color" />
+
+        <LinearLayout
+            android:id="@+id/right_area_root"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_goods_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_bothone_pic_height"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_default_v"
+                    app:riv_corner_radius_top_left="5dp"
+                    app:riv_corner_radius_top_right="5dp"
+                    app:riv_oval="false" />
+
+                <ImageView
+                    android:id="@+id/img_can_play_right"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_play_big"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_vip_right"
+                    android:layout_width="22dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/icon_content_item_vip"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rec_white_stroke_white_solid_cornerbottom5"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_goods_name_right"
+                    style="@style/text_33314_style"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:text="变形金刚4 合金版大黄蜂擎天柱汽车人模型儿童玩具" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                        android:id="@+id/img_teacher_right"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/headimg_default_img" />
+
+                    <TextView
+                        android:id="@+id/tv_teacher_right"
+                        style="@style/text_99912_style"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toLeftOf="@+id/area_praise_num2"
+                        android:layout_toRightOf="@+id/img_teacher_right"
+                        android:singleLine="true"
+                        android:text="DOM老师" />
+
+                    <LinearLayout
+                        android:id="@+id/area_praise_num2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="11dp"
+                            android:layout_height="11dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@mipmap/icon_prase_list" />
+
+                        <TextView
+                            android:id="@+id/tv_read_num_right"
+                            style="@style/text_99912_style"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:text="33" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/area_bottom_space"
+        style="@style/hline_fill"
+        android:layout_height="8dp"
+        android:background="@color/bg_color"
+        android:visibility="visible" />
+
+</LinearLayout>

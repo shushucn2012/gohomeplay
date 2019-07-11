@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <!--选项卡-->
+    <LinearLayout
+        android:id="@+id/title_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/use_tv"
+                    style="@style/myorder_activity_top_tv_style"
+                    android:checked="true"
+                    android:text="待办" />
+
+                <RadioButton
+                    android:id="@+id/used_tv"
+                    style="@style/myorder_activity_top_tv_style"
+                    android:text="已完成" />
+
+                <RadioButton
+                    android:id="@+id/past_tv"
+                    style="@style/myorder_activity_top_tv_style"
+                    android:text="逾期" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/red_dot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_shape_red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/choose_line"
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+            <View
+                android:layout_width="35dp"
+                android:layout_height="2dp"
+                android:background="@color/color_text_red_deep" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

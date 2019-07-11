@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="translucent" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="MyDialogStyleBottom">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <!-- <xplan_item name="android:windowIsFloating">true</xplan_item> -->
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- <xplan_item name="android:windowBackground">@color/transbg</xplan_item> -->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!-- 背景缓存色透明，避免拖动全黑 -->
+        <!-- <xplan_item name="android:windowIsTranslucent">true</xplan_item> -->
+        <!-- <xplan_item name="android:windowNoTitle">true</xplan_item> -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 是否有遮盖 -->
+        <!-- <xplan_item name="android:windowFullscreen">true</xplan_item> -->
+    </style>
+</resources>

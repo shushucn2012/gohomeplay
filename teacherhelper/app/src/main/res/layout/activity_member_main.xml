@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        ptr:ptrHeaderBackground="@color/gffffff"
+        ptr:ptrHeaderTextColor="@color/g999999"
+        ptr:ptrMode="disabled">
+
+        <com.handmark.pulltorefresh.library.ObservableScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="-8dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/member_main_bg" />
+
+                    <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                        android:id="@+id/img_user"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="@dimen/com_border_margin"
+                        android:layout_marginTop="68dp"
+                        android:elevation="8dp"
+                        android:src="@mipmap/mine_icon"
+                        app:border_color="@color/white"
+                        app:border_width="2dp" />
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        style="@style/text_33318_style"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="73dp"
+                        android:layout_toRightOf="@+id/img_user"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/img_exp_vip"
+                        android:layout_width="60dp"
+                        android:layout_height="18dp"
+                        android:layout_below="@+id/tv_username"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/img_user"
+                        android:src="@mipmap/icon_exp_vip"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img_glod_vip"
+                        android:layout_width="30dp"
+                        android:layout_height="18dp"
+                        android:layout_below="@+id/tv_username"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/img_user"
+                        android:src="@mipmap/icon_glod_vip"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tv_no_vip"
+                        style="@style/text_99912_style"
+                        android:layout_below="@+id/tv_username"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/img_user"
+                        android:text="未开通"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tv_vip_expire_date"
+                        style="@style/text_99912_style"
+                        android:layout_below="@+id/tv_username"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/img_glod_vip"
+                        android:text="" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="152dp">
+
+                        <RelativeLayout
+                            android:id="@+id/area_goto_auth"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:layout_marginLeft="@dimen/com_border_margin"
+                            android:layout_marginRight="@dimen/com_border_margin"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/icon_member_goto_auth" />
+
+                            <ImageView
+                                android:id="@+id/img_auth_status"
+                                android:layout_width="89dp"
+                                android:layout_height="31dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="22dp"
+                                android:src="@mipmap/icon_goto_auth" />
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/area_group_members"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/com_border_margin"
+                            android:layout_marginRight="@dimen/com_border_margin"
+                            android:visibility="gone"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="0dp"
+                            app:contentPadding="@dimen/com_border_margin">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        style="@style/text_33314_style"
+                                        android:layout_marginTop="-2dp"
+                                        android:text="团队成员" />
+
+                                    <ImageView
+                                        android:id="@+id/img_manage"
+                                        android:layout_width="22dp"
+                                        android:layout_height="22dp"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@mipmap/icon_person_grop_setting" />
+                                </RelativeLayout>
+
+                                <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                                    android:id="@+id/gv_gourp_members"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-3dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/white"
+                                    android:horizontalSpacing="13dp"
+                                    android:listSelector="@color/transparent"
+                                    android:numColumns="5"
+                                    android:verticalSpacing="13dp"
+                                    android:visibility="visible" />
+
+                                <LinearLayout
+                                    android:id="@+id/area_null_members"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/text_99914_style"
+                                        android:text="暂无成员" />
+
+                                    <ImageView
+                                        android:id="@+id/img_invite_member"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="38dp"
+                                        android:layout_marginTop="15dp"
+                                        android:src="@mipmap/icon_btn_vip_invite" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_marginLeft="@dimen/com_border_margin"
+                        android:layout_marginTop="12dp"
+                        android:text="会员套餐选择" />
+
+                    <LinearLayout
+                        android:id="@+id/area_vip_type_choose"
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:layout_marginTop="40dp"
+                        android:paddingLeft="@dimen/com_border_margin"
+                        android:paddingRight="@dimen/com_border_margin"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/vip_type0_bg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@mipmap/vip_type_bg_normol"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="2dp"
+                                    android:paddingBottom="6dp"
+                                    android:text="@string/renminbi"
+                                    android:textColor="#714e1b" />
+
+                                <TextView
+                                    android:id="@+id/tv_member_one_price"
+                                    style="@style/text_33316_style"
+                                    android:layout_marginLeft="8dp"
+                                    android:text=""
+                                    android:textColor="#714e1b"
+                                    android:textSize="24sp" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/tv_member_one_intro"
+                                style="@style/text_33314_style"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:id="@+id/vip_type1_bg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@mipmap/vip_type_bg_normol"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginBottom="2dp"
+                                    android:paddingBottom="6dp"
+                                    android:text="@string/renminbi"
+                                    android:textColor="#714e1b" />
+
+                                <TextView
+                                    android:id="@+id/tv_member_group_price"
+                                    style="@style/text_33316_style"
+                                    android:layout_marginLeft="8dp"
+                                    android:text=""
+                                    android:textColor="#714e1b"
+                                    android:textSize="24sp" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/tv_member_group_intro"
+                                style="@style/text_33314_style"
+                                android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/com_border_margin"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:contentPadding="@dimen/com_border_margin">
+
+                    <TextView
+                        style="@style/text_33314_style"
+                        android:layout_marginTop="-2dp"
+                        android:text="会员特权" />
+
+                    <com.park61.teacherhelper.widget.webview.ShowImageWebView
+                        android:id="@+id/wv_content_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="5dp" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.ObservableScrollView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/area_right"
+            android:layout_toRightOf="@+id/area_left"
+            android:ellipsize="end"
+            android:text="我的会员" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/icon_erji" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

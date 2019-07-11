@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/gffffff"
+    android:minHeight="50dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_content"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin">
+
+        <TextView
+            android:id="@+id/tv_class_name"
+            style="@style/text_33315_style"
+            android:layout_centerVertical="true"
+            android:layout_width="280dp"
+            android:singleLine="true"
+            android:text="李老师艺术课中三班李老师艺术课中三班" />
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/download_check" />
+    </RelativeLayout>
+
+    <View
+        style="@style/hline_fill_top"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:layout_height="0.5dp" />
+
+
+</LinearLayout>

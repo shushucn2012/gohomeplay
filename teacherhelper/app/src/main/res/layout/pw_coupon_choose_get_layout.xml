@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/planchoose_list_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_33316_style"
+            android:layout_marginTop="10dp"
+            android:text="领取优惠券" />
+
+        <ListView
+            android:id="@+id/lv_teachers"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="5dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000" />
+
+        <LinearLayout
+            android:id="@+id/area_bottom_finish"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gffffff"
+            android:orientation="vertical">
+
+            <View style="@style/hline_fill_top" />
+
+            <TextView
+                style="@style/text_red18_style2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="完成" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

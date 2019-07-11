@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp">
+
+    <com.park61.teacherhelper.module.workplan.calendarview.CalendarRowView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarCellView
+            style="@style/text_calendar_top_weekday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarCellView
+            style="@style/text_calendar_top_weekday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarCellView
+            style="@style/text_calendar_top_weekday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarCellView
+            style="@style/text_calendar_top_weekday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarCellView
+            style="@style/text_calendar_top_weekday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarCellView
+            style="@style/text_calendar_top_weekday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.park61.teacherhelper.module.workplan.calendarview.CalendarCellView
+            style="@style/text_calendar_top_weekday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.park61.teacherhelper.module.workplan.calendarview.CalendarRowView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dp">
+
+        <TextView style="@style/text_calendar_celltext_style" />
+
+        <TextView style="@style/text_calendar_celltext_style" />
+
+        <TextView style="@style/text_calendar_celltext_style" />
+
+        <TextView style="@style/text_calendar_celltext_style" />
+
+        <TextView style="@style/text_calendar_celltext_style" />
+
+        <TextView style="@style/text_calendar_celltext_style" />
+
+        <TextView style="@style/text_calendar_celltext_style" />
+    </FrameLayout>
+
+</FrameLayout>

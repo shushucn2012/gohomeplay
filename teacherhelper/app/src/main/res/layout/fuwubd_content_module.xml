@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/area_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_teacher_show"
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="教学秀"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/area_change_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_99912_style"
+                android:text="换一换" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_change" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.park61.teacherhelper.widget.listview.ListViewForScrollView
+        android:id="@+id/lv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent" />
+</LinearLayout>

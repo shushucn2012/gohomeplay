@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/content_area"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp">
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/text_33315_style"
+            android:text="小红旗1班 小班"
+            />
+
+        <ImageView
+            android:id="@+id/check_state"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/download_uncheck"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bt_line"
+        style="@style/between_line"
+        android:layout_marginLeft="11dp"
+        android:layout_below="@id/content_area"/>
+</RelativeLayout>

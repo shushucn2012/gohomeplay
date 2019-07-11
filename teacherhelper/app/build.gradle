@@ -1,0 +1,187 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        signingConfig {
+            keyAlias 'key1'
+            keyPassword '1987314sb'
+            storeFile file('../teacherhelper.jks')
+            storePassword '1987314sb'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.park61.teacherhelper"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode APP_VERSIONCODE as int
+        versionName APP_VERSION
+        multiDexEnabled true
+        signingConfig signingConfigs.signingConfig
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'key1'
+            keyPassword '1987314sb'
+            storeFile file('G:\\park61_apk\\teacherhelper.jks')
+            storePassword '1987314sb'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    dexOptions {
+        //incremental true
+        javaMaxHeapSize "2g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    repositories {
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
+    }
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir "libs"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    //修改生成的apk名字
+//    applicationVariants.all { variant ->
+//        variant.outputs.all  { output ->
+//            def newName
+//            def timeNow = getDate()
+//            def oldFile = output.outputFile
+//            def outDirectory = oldFile.parent
+//
+//            if ("true".equals(IS_JENKINS)) {
+//                newName = 'teacherhelper_v' + APP_VERSION + '_pre_' + JENKINS_TIME + '.apk'
+//            } else {
+//                if (variant.buildType.name.equals('debug')) {
+//                    newName = "teacherhelper_debug.apk"
+//                } else {
+//                    newName = "teacherhelper_v${APP_VERSION}_pre_" + timeNow + '.apk'
+//                }
+//            }
+//            outputFileName  = new File(outDirectory, newName)
+//        }
+//    }
+
+    //修改release版本生成的apk的名字
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                //这里修改apk文件名
+                outputFileName = "teacherhelper_v${APP_VERSION}_pre_" + getDate() + '.apk'
+            }
+    }
+
+    //强制转换成相同的版本
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '27.0.1'
+                }
+            }
+        }
+    }
+
+}
+
+def static getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //系统级
+    api 'com.android.support:design:27.+'
+    api 'com.android.support:appcompat-v7:27.+'
+    api 'com.android.support:cardview-v7:27.+'
+    testImplementation 'junit:junit:4.12'
+    api 'com.android.support:multidex:1.0.1'
+    api 'com.google.code.gson:gson:2.4'
+    api 'com.mcxiaoke.volley:library:1.0.19'
+    api 'org.greenrobot:eventbus:3.0.0'
+    api(name: 'autoupdatesdk-release', ext: 'aar') //自动升级
+    //引入工程
+    api project(':handmarklibrary')
+    api project(':LRecyclerview_library')
+    api project(':ncalendar')
+    api project(path: ':multi-image-selector')
+    api project(':push')
+    //compile project(path: ':mediapicker')
+    api 'com.dmcBig:mediapicker:+'
+    //阿里云
+    api(name: 'AlivcPlayer', ext: 'aar')
+    api(name: 'AlivcReporter', ext: 'aar')
+    api(name: 'AliyunVodPlayer', ext: 'aar')
+    api(name: 'AliyunVodPlayerView', ext: 'aar')
+    //友盟
+    api 'com.umeng.sdk:push-xiaomi:1.0.0'
+    api 'com.umeng.sdk:push-huawei:1.0.0'
+    api 'com.umeng.sdk:common:1.5.3'
+    //compile 'org.xutils:xutils:3.5.0'
+    //compile 'com.google.zxing:core:3.2.1'
+    //compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+    //compile 'org.apache.geronimo.bundles:commons-httpclient:3.1_2'
+    //后台下载管理
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.lzy.net:okserver:2.0.5'
+    //常用控件
+    api(name: 'bga-banner-2.1.7', ext: 'aar')//banner
+    api(name: 'roundedimageview-2.3.0', ext: 'aar')//圆角图片
+    //compile 'com.github.yalantis:ucrop:2.2.1'//照片裁剪
+    api(name: 'ucrop-2.2.0', ext: 'aar')//照片裁剪
+    //compile 'com.github.dmytrodanylyk.shadow-layout:library:1.0.3'//图形阴影
+    api 'com.lijiankun24:shadowlayout:1.1.0'
+    api(name: 'library-1.0.3', ext: 'aar')//图形阴影
+    //compile 'tyrant:heartlayout:1.0.1'//评论冒泡
+    api(name: 'heartlayout-1.0.1', ext: 'aar')//评论冒泡
+    //以下控件无法找到aar
+    api 'com.contrarywind:Android-PickerView:4.1.2'//日期，条件选择控件
+    api 'cjt.library.wheel:camera:1.1.9'//仿微信照相摄像界面
+    api 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'//瀑布流recycleview
+    api 'com.gcssloop.widget:rclayout:1.6.0'//圆角布局
+    api 'jp.wasabeef:glide-transformations:2.0.1'
+    api 'com.ms-square:expandableTextView:0.1.4'//可展开textview
+    //网络请求框架OKHttp
+    api 'com.squareup.okhttp3:okhttp:3.7.0'
+    api 'com.squareup.okio:okio:1.12.0'
+}

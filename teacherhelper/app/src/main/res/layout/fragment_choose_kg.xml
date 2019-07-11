@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="20dp"
+        >
+
+        <TextView
+            style="@style/text_33318_style"
+            android:text="您所在的地区和幼儿园？"
+            />
+
+        <LinearLayout
+            android:id="@+id/kg_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kg_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请选择您所在的幼儿园"
+                android:textColorHint="@color/gc9bec2"
+                style="@style/text_33318_style"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_next"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gcccccc"
+            android:layout_marginTop="23dp"
+            />
+
+        <TextView
+            android:id="@+id/goNext"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="100dp"
+            android:text="继续"
+            android:background="@drawable/shape_corner_100c9"
+            />
+
+    </LinearLayout>
+</layout>

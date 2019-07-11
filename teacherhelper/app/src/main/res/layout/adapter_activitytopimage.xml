@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:id="@+id/ll_content">
+    <!--android:background="@drawable/select_transparent_bg"-->
+<ImageView
+    android:background="@drawable/color"
+    android:layout_width="120dp"
+    android:layout_height="100dp"
+    android:id="@+id/iv_top"
+    />
+</LinearLayout>

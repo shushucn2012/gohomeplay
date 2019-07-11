@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_transparent_bg"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_recommend"
+        android:layout_width="142dp"
+        android:layout_height="92dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_default_v"
+        app:riv_corner_radius="10dp"
+        app:riv_oval="false" />
+
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/iv_recommend"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/bdp_dark_gray"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_isplay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:src="@mipmap/recommend_play" />
+</RelativeLayout>

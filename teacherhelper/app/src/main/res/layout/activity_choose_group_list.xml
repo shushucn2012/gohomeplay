@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        style="@style/topbar_area_style">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/topbar_title_style"
+            android:text="我的幼儿园" />
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:layout_marginRight="@dimen/com_border_margin"
+                android:text="手动添加"
+                android:textColor="@color/color_text_red_deep" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rec_gray_stroke_gray_solid_corner30">
+
+            <RelativeLayout
+                android:id="@+id/area_country"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_cur_country"
+                    style="@style/text_33314_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/xijiantou2_city" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/serach_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/area_country"
+                android:background="@drawable/rec_gray_stroke_gray_solid_corner30"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/edit_sousuo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="搜索您所在的幼儿园"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="30dp"
+                    android:singleLine="true"
+                    android:textColor="@color/g333333"
+                    android:textColorHint="@color/gc9bec2"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_sousuo"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/xiaosousuo" />
+
+                <ImageView
+                    android:id="@+id/img_del"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/shanchu"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_add_now"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#FFFFF6F9"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_red14_style2"
+            android:layout_centerVertical="true"
+            android:text="没有找到我的幼儿园？" />
+
+        <Button
+            android:id="@+id/btn_to_create"
+            android:layout_width="75dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rec_deepred_stroke_white_solid_corner30"
+            android:text="立即添加"
+            android:textColor="@color/color_text_red_deep"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/plv_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderBackground="@color/transparent"
+        ptr:ptrHeaderTextColor="@color/g999999"
+        ptr:ptrMode="both"/>
+
+</LinearLayout>

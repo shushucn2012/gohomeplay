@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin">
+
+        <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+            android:id="@+id/img_author_header"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_default_h"
+            app:border_color="@color/transparent"
+            app:border_width="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/img_author_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_author_name"
+                style="@style/text_33314_style"
+                android:text="师训展示" />
+
+            <TextView
+                android:id="@+id/tv_pub_time"
+                style="@style/text_99912_style"
+                android:text="师训展示" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_operate"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/icon_more" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/text_33316_style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="15dp"
+            android:text="设计源于生活，细节源于品质" />
+
+        <Button
+            android:id="@+id/expand_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:text="展开"
+            android:textColor="@color/dap_blue"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lv_eva_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+            android:id="@+id/gv_eva_pic"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="-5dp"
+            android:background="@color/gffffff"
+            android:horizontalSpacing="3dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="2"
+            android:verticalSpacing="3dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/area_goto_seeall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                android:id="@+id/img_stu0"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/img_default_h"
+                app:border_color="@color/transparent"
+                app:border_width="0dp" />
+
+            <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                android:id="@+id/img_stu1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/img_default_h"
+                android:visibility="gone"
+                app:border_color="@color/transparent"
+                app:border_width="0dp" />
+
+            <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                android:id="@+id/img_stu2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/img_default_h"
+                android:visibility="gone"
+                app:border_color="@color/transparent"
+                app:border_width="0dp" />
+
+            <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                android:id="@+id/img_stu3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/img_default_h"
+                android:visibility="gone"
+                app:border_color="@color/transparent"
+                app:border_width="0dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shenglue"
+            style="@style/text_99916_style"
+            android:layout_marginLeft="85dp"
+            android:text="..."
+            android:textColor="@color/c7c7cd"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_family_share" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/transparent" />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine" />
+
+</LinearLayout>

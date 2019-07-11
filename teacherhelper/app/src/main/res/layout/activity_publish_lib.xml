@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="nextClick"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="goNext"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        >
+        <include
+            android:id="@+id/head"
+            layout="@layout/topbar_com_whole" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="活动名称"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    style="@style/text_99915_style"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <EditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:maxLength="30"
+                        android:hint="输入活动名称"
+                        android:gravity="top"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="20dp"
+                        android:textColorHint="@color/gc9bec2"
+                        style="@style/text_33315_style"
+                        />
+
+                    <TextView
+                        android:id="@+id/title_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0/30"
+                        style="@style/text_c9b15_style" />
+                </RelativeLayout>
+
+                <TextView
+                    android:text="报名时间设置"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    style="@style/text_99915_style"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        style="@style/text_33315_style"
+                        android:layout_marginLeft="11dp"
+                        android:text="开始时间"
+                        />
+                    <TextView
+                        android:id="@+id/sign_start"
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gc9bec2"
+                        style="@style/text_66615_style"
+                        android:hint="请设置报名开始时间"
+                        android:textAlignment="textEnd"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@mipmap/icon_next"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        style="@style/text_33315_style"
+                        android:layout_marginLeft="11dp"
+                        android:text="结束时间"
+                        />
+                    <TextView
+                        android:id="@+id/sign_end"
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gc9bec2"
+                        style="@style/text_66615_style"
+                        android:hint="请设置报名结束时间"
+                        android:textAlignment="textEnd"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@mipmap/icon_next"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/set_left"
+                        android:text="活动时间设置"
+                        android:layout_marginLeft="10dp"
+                        style="@style/text_99915_style"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="（活动结束了就不能报名）"
+                        android:layout_toRightOf="@id/set_left"
+                        android:textSize="12sp"
+                        android:textColor="#fb4364"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        style="@style/text_33315_style"
+                        android:layout_marginLeft="11dp"
+                        android:text="开始时间"
+                        />
+                    <TextView
+                        android:id="@+id/activity_start"
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gc9bec2"
+                        style="@style/text_66615_style"
+                        android:hint="请设置活动开始时间"
+                        android:textAlignment="textEnd"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@mipmap/icon_next"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        style="@style/text_33315_style"
+                        android:layout_marginLeft="11dp"
+                        android:text="结束时间"
+                        />
+                    <TextView
+                        android:id="@+id/activity_end"
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gc9bec2"
+                        style="@style/text_66615_style"
+                        android:hint="请设置活动结束时间"
+                        android:textAlignment="textEnd"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@mipmap/icon_next"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="下一步"
+            android:onClick="@{nextClick}"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@{goNext?@color/gfb4364:@color/gc9bec2}"
+            android:gravity="center"
+            />
+        
+    </LinearLayout>
+</layout>

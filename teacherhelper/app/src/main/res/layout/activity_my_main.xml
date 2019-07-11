@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/top_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<View-->
+            <!--android:id="@+id/top_space_area"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/bg_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@mipmap/wodepicbg">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.park61.teacherhelper.widget.circleimageview.CircleImageView
+                            android:id="@+id/img_me"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/headimg_default_img" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/bdp_dark_gray"
+                            android:textSize="16dp" />
+                        <!--<LinearLayout-->
+                        <!--android:visibility="gone"-->
+                        <!--android:id="@+id/area"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tv_me_name"-->
+                        <!--style="@style/text_color1_14_style"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:text="未登录"-->
+                        <!--android:textSize="20sp" />-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:visibility="visible">-->
+
+                        <!--<LinearLayout-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                        <!--style="@style/text_color2_14_style"-->
+                        <!--android:text="收藏"-->
+                        <!--android:textSize="12sp" />-->
+
+                        <!--<TextView-->
+                        <!--style="@style/text_color1_14_style"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:text="0"-->
+                        <!--android:textSize="16sp" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<View-->
+                        <!--android:visibility="gone"-->
+                        <!--style="@style/vline_fill_dp"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:background="@color/color_text2"/>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                        <!--style="@style/text_color2_14_style"-->
+                        <!--android:text="圈子"-->
+                        <!--android:textSize="12sp" />-->
+
+                        <!--<TextView-->
+                        <!--style="@style/text_color1_14_style"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:text="0"-->
+                        <!--android:textSize="16sp" />-->
+                        <!--</LinearLayout>-->
+                        <!--</LinearLayout>-->
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_img_my_activity"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/gffffff">
+
+                <ImageView
+                    android:id="@+id/img_my_activity"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_my_activity" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_my_activity"
+                    android:text="我的活动" />
+
+                <ImageView
+                    android:id="@+id/img_my_identky_activity"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+            <View style="@style/between_line"/>
+            <RelativeLayout
+
+                android:id="@+id/area_img_my_dentky"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gffffff">
+
+                <ImageView
+                    android:id="@+id/img_my_dentky"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/myidnity" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_my_dentky"
+                    android:text="我的入场券" />
+
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_toLeftOf="@+id/img_my_identky_arrow"
+                    android:background="@drawable/reddot"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_my_identky_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <View style="@style/between_line"/>
+            <RelativeLayout
+
+                android:id="@+id/download_area"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gffffff">
+
+                <ImageView
+                    android:id="@+id/img_download_center"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_mydownload" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_download_center"
+                    android:text="我的下载" />
+
+                <ImageView
+                    android:id="@+id/img_my_download_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_class1"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gffffff"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_my_class"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_class" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_my_class"
+                    android:text="我的班级" />
+
+                <ImageView
+                    android:id="@+id/img_my_class_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_test"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/gffffff"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_test"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_test" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_test"
+                    android:text="多元测评" />
+
+                <ImageView
+                    android:id="@+id/img_test_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_photo1"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/gffffff"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_photo_publish"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_photo_publish" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_photo_publish"
+                    android:text="照片发布" />
+
+                <ImageView
+                    android:id="@+id/img_photo_publish_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_notice1"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/gffffff"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_notice"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_notice" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_notice"
+                    android:text="通知家长" />
+
+                <ImageView
+                    android:id="@+id/img_notice_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_help"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/gffffff">
+
+                <ImageView
+                    android:id="@+id/img_help"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_help" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_help"
+                    android:text="帮助中心" />
+
+                <ImageView
+                    android:id="@+id/img_help_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_feeback"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/gffffff">
+
+                <ImageView
+                    android:id="@+id/img_feeback"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_feeback" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_feeback"
+                    android:text="意见反馈" />
+
+                <ImageView
+                    android:id="@+id/img_feeback_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/area_custom_service"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/gffffff">
+
+                <ImageView
+                    android:id="@+id/img_custom_service"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_kf" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_custom_service"
+                    android:text="联系客服" />
+
+                <ImageView
+                    android:id="@+id/img_scustom_service_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/area_setting"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/gffffff">
+
+                <ImageView
+                    android:id="@+id/img_setting"
+                    style="@style/me_item_img_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_setting" />
+
+                <TextView
+                    style="@style/text_33316_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@id/img_setting"
+                    android:text="系统设置" />
+
+                <ImageView
+                    android:id="@+id/img_setting_arrow"
+                    style="@style/me_item_arrow_style" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rr_mine"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/area_class"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_class" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="我的班级"
+                    android:textColor="@color/bdp_dark_gray"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_photo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_photo_publish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="照片发布"
+                    android:textColor="@color/bdp_dark_gray"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/area_notice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_notice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="通知家长"
+                    android:textColor="@color/bdp_dark_gray"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/corner_view" />
+</RelativeLayout>

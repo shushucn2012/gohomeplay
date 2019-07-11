@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="20dp"
+        >
+
+        <TextView
+            style="@style/text_33318_style"
+            android:text="您的昵称？"
+            />
+
+        <EditText
+            android:id="@+id/kg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:hint="请填写您的昵称"
+            android:maxLines="1"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColorHint="@color/gc9bec2"
+            style="@style/text_33318_style"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gcccccc"
+            android:layout_marginTop="23dp"
+            />
+
+        <TextView
+            android:id="@+id/goNext"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="100dp"
+            android:text="继续"
+            android:background="@drawable/shape_corner_100c9"
+            />
+
+    </LinearLayout>
+</layout>

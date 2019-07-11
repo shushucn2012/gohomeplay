@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme">#0091F0</color>
+
+    <color name="white">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="g000000">#000000</color>
+    <!-- 白色 -->
+    <color name="gffffff">#ffffff</color>
+    <color name="gfbfbfb">#fbfbfb</color>
+    <color name="gf4f4f4">#f4f4f4</color>
+    <color name="gfff7f7">#fff7f7</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="seven_percent">#b3000000</color>
+    <!-- 灰色 -->
+    <color name="gaaaaaa">#aaaaaa</color>
+    <color name="g333333">#222222</color>
+    <color name="g222222">#222222</color>
+    <color name="gc9bec2">#c9bec2</color>
+    <color name="gbfbfbf">#bfbfbf</color>
+    <color name="gfb4364">#FB4364</color>
+    <!-- 深灰色 -->
+    <color name="g666666">#666666</color>
+    <color name="g3f3f3f">#3f3f3f</color>
+    <color name="gfcce09">#fcce09</color>
+    <!-- 深红色 -->
+    <color name="g981c10">#981c10</color>
+    <!-- 通用红色 -->
+    <color name="ge74c3c">#e74c3c</color>
+    <!-- 点击红色 -->
+    <color name="gcf4436">#cf4436</color>
+    <!-- 线条颜色 -->
+    <color name="gcccccc">#dddddd</color>
+    <!-- 背景颜色 -->
+    <color name="gdfdfe9">#dfdfe9</color>
+    <!-- 通用蓝色 -->
+    <color name="g08a6db">#08a6db</color>
+    <!-- 点击蓝色 -->
+    <color name="g0795c5">#0795c5</color>
+    <!-- 点击前灰色 -->
+    <color name="gafb0c0">#afb0c0</color>
+    <!-- 点击灰色 -->
+    <color name="g9d9eac">#9d9eac</color>
+    <!-- 文字灰色 -->
+    <color name="g999999">#999999</color>
+    <color name="g9b9b9b">#9b9b9b</color>
+    <color name="gbbbbbb">#bbbbbb</color>
+    <color name="gdddddd">#dddddd</color>
+    <!-- 底部白色背景 -->
+    <color name="gededf7">#ededf7</color>
+    <!-- 键盘灰色背景 -->
+    <color name="gd5d5de">#d5d5de</color>
+    <color name="list_divider">#D0CCC7</color>
+    <color name="schedule_bg">#efefef</color>
+    <!-- 透明背景 -->
+    <color name="transbg">#66000000</color>
+    <color name="com_red">#ff3064</color>
+    <color name="text_red">#d80c18</color>
+    <color name="com_green">#42D35B</color>
+    <color name="collect_red">#FF4131</color>
+    <color name="new_red">#F13132</color>
+    <color name="transparent_red">#33D22128</color>
+    <color name="com_orange">#FB4364</color>
+    <color name="gray_red">#FF7D86</color>
+    <color name="gfa7f94">#fa7f94</color>
+    <color name="com_light_orange">#FF5946</color>
+    <color name="gfeb6d5">#feb6d5</color>
+    <color name="bg_color">#f5f5f9</color>
+    <color name="gf8f8f8">#f8f8f8</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="g3ec6ff">#3ec6ff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="btn_goods_evaluate">#ffa600</color>
+    <color name="btn_addtocart_bg">#FABD00</color>
+    <color name="calendar_point">#FDDD53</color>
+    <color name="gf8a311">#f8a311</color>
+    <!-- 宝宝成长日程中有游戏的日期颜色 -->
+    <color name="text_txt_bg">#72d058</color>
+    <color name="main_green">#1fcf7c</color>
+    <color name="text_txt_current_bg">#FF4646</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--浅线-->
+    <color name="topLine">#e5e5e5</color>
+    <color name="c7c7cd">#c7c7cd</color>
+    <color name="colorLine">#e5e5e5</color>
+    <color name="colorLineSales">#D0CFD3</color>
+    <!--背景色-->
+    <color name="colorBg">#efefef</color>
+    <color name="background_select_tab_pressed">#FF0000</color>
+    <color name="sallow_red">#ff8383</color>
+    <color name="sallow_red_alpha">#22ff8383</color>
+    <color name="text_red_alpha">#22d80c18</color>
+    <color name="bg_red_alpha">#77d80c18</color>
+    <color name="invite_bg">#4443629c</color>
+    <color name="text_blue">#00b4ff</color>
+    <color name="btn_yellow">#ffd200</color>
+    <color name="text_color_blue">#44bfff</color>
+    <color name="gray">#f5f5f9</color>
+    <color name="bg_grey">#f9f9fc</color>
+    <color name="hint_color">#dadada</color>
+    <color name="line_gc">#cccccc</color>
+    <color name="btn_stroke">#818181</color>
+    <color name="btn_bg_grey">#e5e5e5</color>
+    <color name="com_yellow">#ffe13e</color>
+    <color name="reward_yellow">#F1DAB4</color>
+    <color name="reward_num">#7C3E09</color>
+    <color name="gray_white">#FEB1B9</color>
+    <color name="dap_blue">#5889dc</color>
+    <color name="gFFD520">#FFD520</color>
+    <color name="g33FFD520">#33FFD520</color>
+    <color name="gFF8FA3">#FF8FA3</color>
+    <color name="g33FF8FA3">#33FF8FA3</color>
+
+    <color name="tint_color">#EF4B81</color>
+    <color name="start_color">#FF968F</color>
+    <color name="timeline_background_del_color">#ffcc0000</color>
+    <color name="timeline_backgound_color">#D8D8D8</color>
+    <color name="gryline">#f1f1f1</color>
+
+    <color name="camera_bg">#2c2c2c</color>
+    <color name="title_background_color">#fcb840</color>
+    <color name="camera_progress_split">#005084</color>
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="camera_progress_overflow">#1b5d89</color>
+    <color name="camera_progress_delete">#f68b2b</color>
+    <color name="camera_bottom_press_bg">#1b1c1f</color>
+
+    <color name="color_text1">#222222</color>
+    <color name="color_text2">#c4b7bc</color>
+    <color name="color_text3">#D3C7CB</color>
+    <color name="color_text_red_date_range">#FFFEECEF</color>
+    <color name="color_text_red_light">#FFACC0</color>
+    <color name="color_text_red_deep">#FF5A80</color>
+    <color name="toy_size_color">#fe5a80</color>
+    <color name="color_fc3f6d">#FC3F6D</color>
+    <color name="server_select_r">#fff7f7</color>
+    <color name="color_text_tip">#ddd4d4</color>
+    <color name="app_bg">#F6F6F6</color>
+    <color name="city_search_bg">#fff2f2f2</color>
+    <color name="gc9c9c9c">#c9c9c9</color>
+    <color name="gefefef">#efefef</color>
+    <color name="gfafafe">#fafafe</color>
+
+    <color name="activity_sign">#fe698b</color>
+    <color name="activity_close">#d0d0d0</color>
+    <color name="activity_data_color">#ffc130</color>
+    <color name="g8b8b8b">#8b8b8b</color>
+    <color name="gfcffffff">#66f6f6f6</color>
+
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#222222</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="g3F0102">#3F0102</color>
+    <color name="tip_bg_red">#fff6f9</color>
+</resources>

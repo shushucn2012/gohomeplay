@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:minHeight="175dp"
+    android:background="@color/gffffff"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/view_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home_focus" />
+
+        <TextView
+            style="@style/text_99916_style"
+            android:layout_marginTop="28dp"
+            android:text="首页" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_msg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_msg" />
+
+        <TextView
+            style="@style/text_99916_style"
+            android:layout_marginTop="28dp"
+            android:text="消息" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view_helper"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_help" />
+
+        <TextView
+            style="@style/text_99916_style"
+            android:layout_marginTop="28dp"
+            android:text="帮助" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_feed"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_feeback" />
+
+        <TextView
+            style="@style/text_99916_style"
+            android:layout_marginTop="28dp"
+            android:text="反馈" />
+    </LinearLayout>
+
+</LinearLayout>

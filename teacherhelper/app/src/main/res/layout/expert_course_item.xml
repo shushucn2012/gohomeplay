@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_hotgame"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:background="@color/gffffff"
+    android:minHeight="145dp">
+
+    <RelativeLayout
+        android:id="@+id/area_teacher_img"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_default_v"
+            app:riv_corner_radius="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="6dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/renqi" />
+
+            <TextView
+                android:id="@+id/tv_popularity"
+                style="@style/text_fff12_style"
+                android:layout_marginLeft="2dp"
+                android:text="123" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_area"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/area_teacher_img">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33314_style"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="61区儿童节61区儿童节61区儿童节61区儿童节童节61区儿童节" />
+
+        <TextView
+            android:id="@+id/tv_lable"
+            style="@style/text_99912_style"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:text="彭新屋|高级研究员"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            style="@style/text_66612_style"
+            android:layout_below="@+id/tv_lable"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_marginTop="13dp"
+            android:singleLine="true"
+            android:text="第六课 | 父母对孩子有意专注的经验式教育" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/text_red14_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:singleLine="true"
+            android:text="￥199.9" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/between_line"
+        android:layout_alignLeft="@id/title_area"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

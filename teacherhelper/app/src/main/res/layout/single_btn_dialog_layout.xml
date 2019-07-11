@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rec_white_stroke_white_solid_corner5"
+    android:minHeight="145dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_33315_style"
+            android:layout_marginBottom="20dp"
+            android:text="支付成功"
+            android:textColor="@color/g000000"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            style="@style/text_66615_style"
+            android:maxLines="5"
+            android:text="您已成功报名了61区南湖儿童创意绘画游戏" />
+    </LinearLayout>
+
+    <View style="@style/hline_fill" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        style="@style/button_bule_style"
+        android:layout_height="45dp"
+        android:layout_weight="0.5"
+        android:text="返回首页"
+        android:textColor="@color/com_orange"
+        android:textSize="18sp" />
+
+</LinearLayout>

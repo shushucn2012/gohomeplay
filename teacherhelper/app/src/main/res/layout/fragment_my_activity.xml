@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.jdsjlzx.recyclerview.LRecyclerView
+                android:id="@+id/activity_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray" />
+
+            <include
+                android:id="@+id/empty_view"
+                layout="@layout/lrecyc_empty_view"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

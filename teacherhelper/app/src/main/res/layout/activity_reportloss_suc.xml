@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <View style="@style/hline_fill_top" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/icon_reportloss_suc" />
+
+    <TextView
+        style="@style/text_33316_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="申请提交成功" />
+
+    <TextView
+        style="@style/text_99914_style"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="服务人员会尽快与您联系确认" />
+
+</LinearLayout>

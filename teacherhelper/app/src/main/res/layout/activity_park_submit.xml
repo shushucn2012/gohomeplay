@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="describeClick"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="isStarPark"
+            type="boolean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <include layout="@layout/topbar_com" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="11dp"
+                        android:src="@mipmap/icon_default_info" />
+
+                    <TextView
+                        style="@style/text_22217_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:text="基础信息" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@mipmap/icon_describ"
+                        android:drawablePadding="8dp"
+                        android:onClick="@{describeClick}"
+                        android:text="填写说明"
+                        android:textColor="@color/gbfbfbf"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_66615_style"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:text="园所类型:" />
+
+                    <TextView
+                        android:id="@+id/starPark"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:background="@{isStarPark?@drawable/shape_corner_100f4:@drawable/shape_corner_100}"
+                        android:gravity="center"
+                        android:text="明星园"
+                        android:textColor="@{isStarPark?@color/gffffff:@color/g666666}"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/basePark"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@{isStarPark?@drawable/shape_corner_100:@drawable/shape_corner_100f4}"
+                        android:gravity="center"
+                        android:text="基地园"
+                        android:textColor="@{isStarPark?@color/g666666:@color/gffffff}"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_66615_style"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:text="园所名称:" />
+
+                        <EditText
+                            android:id="@+id/school_name"
+                            style="@style/text_22215_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:maxLength="20"
+                            android:hint="请输入园所名称（必填）"
+                            android:textColorHint="@color/gbbbbbb" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/gdddddd" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_66615_style"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:text="园所地址:" />
+
+                        <TextView
+                            android:id="@+id/school_address"
+                            style="@style/text_22215_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="省／市／县（必填）"
+                            android:textColorHint="@color/gbbbbbb" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@mipmap/icon_next" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="90dp"
+                        android:background="@color/gdddddd" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/school_detail_address"
+                            style="@style/text_22215_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:hint="请输入园所详细地址"
+                            android:maxLength="50"
+                            android:textColorHint="@color/gbbbbbb" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/gdddddd" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_66615_style"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:text="联系人:" />
+
+                        <EditText
+                            android:id="@+id/school_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:hint="请输入园所联系人（必填）"
+                            android:textColor="@color/g222222"
+                            android:textColorHint="@color/gbbbbbb"
+                            android:maxLength="8"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/gdddddd" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_66615_style"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:text="联系电话:" />
+
+                        <EditText
+                            android:id="@+id/school_contact_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@null"
+                            android:hint="请输入园所联系人电话（必填）"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:textColor="@color/g222222"
+                            android:textColorHint="@color/gbbbbbb"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/gdddddd" />
+                </LinearLayout>
+
+                <com.park61.teacherhelper.widget.gridview.GridViewForScrollView
+                    android:id="@+id/gridInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:scrollbars="none"
+                    android:background="@android:color/transparent"
+                    android:layout_marginBottom="20dp"
+                    android:numColumns="3" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/bottomBtSaveBase"
+            style="@style/text_fff18_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/gc9bec2"
+            android:gravity="center"
+            android:text="保存并补充其他信息" />
+
+        <Button
+            android:id="@+id/bottomBtAllComt"
+            style="@style/text_fff18_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/gc9bec2"
+            android:gravity="center"
+            android:text="立即提交"
+            android:visibility="gone"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/topbar_com" />
+
+    <View
+        android:id="@+id/area_top_space"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/area_top_space"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/area_content"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/area_phone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_phone_label"
+                    style="@style/text_33315_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text="手机号" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/text_33314_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:text="18062511980" />
+            </RelativeLayout>
+
+            <View style="@style/hline_marginleft15" />
+
+            <RelativeLayout
+                android:id="@+id/area_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_pwd"
+                    style="@style/text_33315_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text="重置密码" />
+
+                <ImageView
+                    android:id="@+id/img_addr_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bg_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/area_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_clear_cache_label"
+                    style="@style/text_33315_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text="清理缓存" />
+
+                <TextView
+                    android:id="@+id/tv_clear_cache"
+                    style="@style/text_99914_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="40MB" />
+
+                <ImageView
+                    android:id="@+id/img_clear_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View style="@style/hline_marginleft15" />
+
+            <RelativeLayout
+                android:id="@+id/version_area"
+                style="@style/me_item_area_style"
+                android:layout_height="55dp">
+
+                <TextView
+                    style="@style/text_33315_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text="检查更新" />
+
+                <TextView
+                    android:id="@+id/tv_version_name"
+                    style="@style/text_99914_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:text="好赞，已是最新版本" />
+            </RelativeLayout>
+
+            <View style="@style/hline_marginleft15" />
+
+            <RelativeLayout
+                android:id="@+id/area_aboutme"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/gffffff">
+
+                <TextView
+                    android:id="@+id/tv_aboutme_label"
+                    style="@style/text_33315_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:text="关于61学院" />
+
+                <ImageView
+                    android:id="@+id/img_clear_downarrow"
+                    style="@style/me_item_arrow_style"
+                    android:layout_marginRight="@dimen/com_border_margin"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gffffff"
+        android:text="退出登录"
+        android:textColor="@color/color_text_red_deep"
+        android:textSize="18sp" />
+
+</RelativeLayout>

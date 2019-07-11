@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppLayout_white">
+
+    <com.park61.teacherhelper.widget.listview.ObservableScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_topback"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:background="@mipmap/double11back"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="45dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/top_viewpagers"
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:clipChildren="false" />
+
+                    <include
+                        android:id="@+id/top_vp_dot"
+                        layout="@layout/home_pageview_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="55dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_recyclerviewcity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/com_red"
+                android:divider="#ffff0000" />
+
+            <com.park61.teacherhelper.widget.listview.ListViewScrollView
+                android:id="@+id/lv_activitylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:listSelector="#00000000" />
+            <!--<ImageView-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/iv_imagenodata"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="400dp"-->
+            <!--android:background="@mipmap/activity_listnodata"-->
+            <!--/>-->
+        </LinearLayout>
+    </com.park61.teacherhelper.widget.listview.ObservableScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        style="@style/AppTitle_Layout"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/tv_titlename"
+            style="@style/AppTitle_TextView"
+            android:text="双十一幼师狂欢节"
+            android:textColor="@color/gffffff"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/area_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                style="@style/AppTitle_BackView"
+                android:contentDescription="@null"
+                android:src="@mipmap/icon_content_backimg" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_redshre"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_shadow_share"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

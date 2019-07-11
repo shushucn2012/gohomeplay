@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="headState"
+            type="String"/>
+        <variable
+            name="goBack"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            style="@style/topbar_area_style">
+
+            <LinearLayout
+                android:id="@+id/area_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/com_border_margin"
+                    android:onClick="@{goBack}"
+                    android:src="@mipmap/icon_red_backimg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/page_title"
+                style="@style/topbar_title_style"
+                android:text="@string/sign_in" />
+        </RelativeLayout>
+
+        <View style="@style/between_line" />
+
+        <RelativeLayout
+            android:id="@+id/order_state_area"
+            android:layout_width="match_parent"
+            android:background="@drawable/qinzi_top_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="30dp"
+            android:layout_height="92dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3b77"
+                android:textSize="15sp"
+                android:text="@{headState}"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:id="@+id/order_state_img"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_proceed"
+                />
+        </RelativeLayout>
+
+        <!-- 订单信息 -->
+        <LinearLayout
+            android:id="@+id/order_llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_22214_style"
+                    android:text="联系人："
+                    />
+
+                <TextView
+                    android:id="@+id/contact_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    style="@style/text_22214_style"
+                    />
+                <TextView
+                    android:id="@+id/contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_22214_style"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_height="6dp"
+                style="@style/between_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="12dp"
+                >
+                
+                <ImageView
+                    android:id="@+id/activity_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/img_default_v"
+                    android:scaleType="centerCrop"
+                    />
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    >
+                    
+                    <TextView
+                        android:id="@+id/activity_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        style="@style/text_22215_style"
+                        />
+
+                    <TextView
+                        android:id="@+id/activity_time"
+                        style="@style/text_99912_style"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/activity_site"
+                        style="@style/text_99912_style"
+                        android:layout_above="@id/activity_time"
+                        android:layout_marginBottom="3dp"
+                        />
+                </RelativeLayout>
+                
+            </LinearLayout>
+            <View style="@style/between_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_99913_style"
+                        android:text="报名时间："
+                        />
+                    <TextView
+                        android:id="@+id/activity_signup_time"
+                        style="@style/text_99913_style"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_99913_style"
+                        android:text="签到时间："
+                        />
+                    <TextView
+                        android:id="@+id/activity_signin_time"
+                        style="@style/text_99913_style"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/between_line" />
+    </LinearLayout>
+</layout>

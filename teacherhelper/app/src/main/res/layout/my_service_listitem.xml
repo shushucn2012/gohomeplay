@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/area_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gffffff"
+        android:paddingBottom="18dp"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin"
+        android:paddingTop="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/area_right_status"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_service_no"
+                style="@style/text_33316_style"
+                android:text="HB1010001" />
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                style="@style/text_99914_style"
+                android:layout_marginTop="8dp"
+                android:text="春天花花幼儿园" />
+
+            <TextView
+                android:id="@+id/tv_group_addr"
+                style="@style/text_99914_style"
+                android:layout_marginTop="8dp"
+                android:text="湖北省武汉市武昌区" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_right_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_status_name"
+                style="@style/text_red16_style"
+                android:text="待受理" />
+
+            <Button
+                android:id="@+id/btn_confirm_finish"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rec_gray_stroke_trans_solid_corner5"
+                android:text="确认服务完成"
+                android:textColor="@color/g999999"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/hline_fill" />
+
+</LinearLayout>

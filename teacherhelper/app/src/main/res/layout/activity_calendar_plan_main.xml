@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gffffff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/area_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/com_border_margin"
+                android:src="@mipmap/icon_red_backimg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_right"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/calendar_main_menu" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/click_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_date_top"
+            style="@style/text_33320_style"
+            android:text="2018年"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="1dp"
+            android:src="@mipmap/icon_down_triangle" />
+    </LinearLayout>
+
+    <com.park61.teacherhelper.widget.viewpager.MyPagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/gffffff"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsDividerPadding="0dp"
+        app:pstsIndicatorColor="@color/transparent"
+        app:pstsIndicatorHeight="4dp"
+        app:pstsScrollOffset="50dp"
+        app:pstsShouldExpand="false"
+        app:pstsTabBackground="@mipmap/months_bg2"
+        app:pstsTabPaddingLeftRight="5dp"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/transparent"
+        app:pstsUnderlineHeight="1dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp" />
+
+</LinearLayout>

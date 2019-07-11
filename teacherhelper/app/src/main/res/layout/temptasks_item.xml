@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/gffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_task_type"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:background="@drawable/circle_shape_gfcce09"
+            android:gravity="center"
+            android:text="上课"
+            android:textColor="@color/gffffff"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/tv_task_name"
+                style="@style/text_33315_style"
+                android:layout_centerVertical="true"
+                android:text="厨房卫生检查" />
+
+            <View
+                android:id="@+id/line_bottom"
+                style="@style/hline_fill_top"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
